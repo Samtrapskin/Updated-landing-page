@@ -1,0 +1,174 @@
+body {
+    /* font-family: 'Montserrat', sans-serif; */
+Background-color:#050404;
+}
+h1 {
+    /* font-family: font-family: 'Archivo Narrow', sans-serif  */
+    /* font-family: 'Poppins', sans-serif !important; */
+    font-family: 'Roboto', sans-serif !important;
+    /* font-family: 'Rubik', sans-serif !important; */
+    color: #fff;
+    font-weight: 900;
+    line-height: 1 !important;
+    font-size: 8.5rem !important;
+
+}
+
+.greeting {
+    font-family: 'Pontano Sans', sans-serif;
+    margin: 50px auto 20px auto;
+    color:#342D72;
+    font-size: 1.7em;
+}
+
+.container-fluid {
+    padding: 0% 3% 4%;
+}
+
+
+/* Navigation bar */
+
+.navbar {
+    padding: 0 0 4.5rem 0;
+    top: 0;
+    position: sticky;
+}
+
+
+
+.nav-item {
+    padding: 0 18px;
+    
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color:#fff !important;
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+   h2{                
+                      
+                    
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5
+}
+
+
+
+                             
+  /****Section classes ****/ 
+                             
+
+
+/* Navigation bar */
+
+.navbar {
+    padding: 0 0 4.5rem 0;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+
+/* FOOTER */
+.fa-linkedin {
+    size:5x;
+}
+
+
+/**** SECTIONS ****/
+
+#features {
+    background-color: #fff;
+    position: relative;
+
+}
+
+#main-image {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+
+#title {
+    background-color: #050404;
+    color: rgb(255, 255, 255);
+    text-align: left;
+
+}
+
+#testimonials {
+    text-align: center;
+    background-color: #ef8172;
+    color: #fff;
+}
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+
+#pricing {
+    text-align: center;
+}
+
+#cta {
+    text-align: center;
+    background-color: #ff4c68;
+}
+
+#footer-main {
+    background-color: #fff;
+    text-align: center;
+}
+
+/* *** MEDIA QUERY *** */
+@media (max-width: 1028px) {
+
+    #title {
+        text-align: center;
+    }
+
+    #main-image {
+        position: static;
+        transform: rotate(0);
+
+    }
+}
+/* *** MEDIA QUERY *** */
+@media (max-width: 682px) {
+
+    h1 {
+        font-size: 4.9rem !important;
+    }
+
+ 
+}
+
+
