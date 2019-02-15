@@ -34,28 +34,6 @@ h1 {
 
 /* Navigation bar */
 
-.navbar {
-    padding: 0 0 4.5rem 0;
-    top: 0;
-    position: sticky;
-}
-
-
-
-.nav-item {
-    padding: 0 18px;
-    
-}
-
-.nav-link {
-    font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    color:#fff !important;
-}
-
-
-
 body {
     font-family: 'Montserrat', sans-serif;
 
@@ -74,30 +52,125 @@ body {
                              
   /****Section classes ****/ 
                              
-
-
-/* Navigation bar */
-
-.navbar {
-    padding: 0 0 4.5rem 0;
+  article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block;
+}
+*, *:after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+article, aside, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+.container > section {
+    margin: 0 auto;
+    padding: 10em 3em;
+    text-align: center;
 }
 
-.navbar-brand {
-    font-family: 'Ubuntu';
-    font-size: 2.5rem;
-    font-weight: bold;
+*, *:after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.cl-effect-2 a {
+    line-height: 44px;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+}
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 15px 25px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1.35em;
+}
+a {
+    text-decoration: none;
+}
+*, *:after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.container > section {
+    margin: 0 auto;
+    padding: 10em 3em;
+    text-align: center;
 }
 
-.nav-item {
-    padding: 0 18px;
+*, *:after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
-.nav-link {
-    font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+*, *:after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
+.cl-effect-2 a span {
+    position: relative;
+    display: inline-block;
+    padding: 0 14px;
+    background: #2195de;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+    -webkit-transform-origin: 50% 0;
+    -moz-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.cl-effect-2 a {
+    line-height: 44px;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+}
+nav a {
+    position: relative;
+    display: inline-block;
+    margin: 15px 25px;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255,255,255,0.3);
+    font-size: 1.35em;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.container > section {
+    margin: 0 auto;
+    padding: 10em 3em;
+    text-align: center;
+}
 
 
 /* FOOTER */
