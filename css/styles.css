@@ -51,137 +51,54 @@ body {
 
                              
   /****Section classes ****/ 
-                             
-  article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-    display: block;
-}
-*, *:after, *::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-article, aside, footer, header, hgroup, main, nav, section {
-    display: block;
-}
-.container > section {
-    margin: 0 auto;
-    padding: 10em 3em;
-    text-align: center;
+  .navigate {
+      float:right;
+  }
+  .nav-item::after{content:'';display:block;width:0px;height:2px;background:#fec400;transition: 0.2s;}
+  .nav-item:hover::after{width:100%;}
+  .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link,.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{color:h#fff;}
+  .nav-link{padding:15px 5px;transition:0.2s;}
+  .dropdown-item.active, .dropdown-item:active{color:#212529;}
+  .dropdown-item:focus, .dropdown-item:hover{background:hotpink;;}
+  /* .navbar {
+    padding: 0 0 4.5rem 0;
 }
 
-*, *:after, *::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-*, *:after, *::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.cl-effect-2 a {
-    line-height: 44px;
-    -webkit-perspective: 1000px;
-    -moz-perspective: 1000px;
-    perspective: 1000px;
-}
-nav a {
-    position: relative;
-    display: inline-block;
-    margin: 15px 25px;
-    outline: none;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 400;
-    text-shadow: 0 0 1px rgba(255,255,255,0.3);
-    font-size: 1.35em;
-}
-a {
-    text-decoration: none;
-}
-*, *:after, *::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
-.container > section {
-    margin: 0 auto;
-    padding: 10em 3em;
-    text-align: center;
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
-*, *:after, *::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-*, *:after, *::before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.cl-effect-2 a span {
-    position: relative;
-    display: inline-block;
-    padding: 0 14px;
-    background: #2195de;
-    -webkit-transition: -webkit-transform 0.3s;
-    -moz-transition: -moz-transform 0.3s;
-    transition: transform 0.3s;
-    -webkit-transform-origin: 50% 0;
-    -moz-transform-origin: 50% 0;
-    transform-origin: 50% 0;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-.cl-effect-2 a {
-    line-height: 44px;
-    -webkit-perspective: 1000px;
-    -moz-perspective: 1000px;
-    perspective: 1000px;
-}
-nav a {
-    position: relative;
-    display: inline-block;
-    margin: 15px 25px;
-    outline: none;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 400;
-    text-shadow: 0 0 1px rgba(255,255,255,0.3);
-    font-size: 1.35em;
-}
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
-.container > section {
-    margin: 0 auto;
-    padding: 10em 3em;
-    text-align: center;
+.nav-item {
+    padding: 0 18px;
 }
 
+.nav-link {
+    /* font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; */
+/* }
 
+a:hover {
+text-decoration: underline;
+color:tomato;
+width: 10px;
+} */ 
 /* FOOTER */
 
 .pop {
-    color: #e5629f;
+    color: white;
+    background-color: #e5629f;
+    padding: 4px;
     /* background-color:#3b49dd; */
 }
 
 .pop-blue {
-    color: #1b57fc;
+    color: white;
+    background-color: #1b57fc;
+    padding: 4px;
+
 }
     /* .pop{
          */
