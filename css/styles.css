@@ -17,13 +17,19 @@ h1 {
 .greeting {
     font-family: 'Pontano Sans', sans-serif;
     margin: 50px auto 20px auto;
-    color:#342D72;
+    color:#000000;
     font-size: 1.7em;
 }
 
 .container-fluid {
     padding: 0% 3% 4%;
 }
+/* .separate {
+    height: 20px;
+} */
+.serparator{
+    height: 2px;
+} 
 
 
 /* Navigation bar */
@@ -93,10 +99,43 @@ body {
 }
 
 
+
 /* FOOTER */
+
+/* .pop {
+    color: #fafafa;;
+    background-color:#3b49dd;
+     */
+    .pop{
+        background: url(/bgclip/img/paint.png) repeat, white;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-animation-name: masked-animation;
+        -webkit-animation-duration: 40s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+    }
+    @-webkit-keyframes masked-animation {
+        0% {background-position: left bottom;}
+        100% {background-position: right bottom;}
+    }
+    /* background-color:black; */
+    /* -webkit-text-decoration: hotpink double underline;
+    text-decoration: hotpink double underline; */
+    /* -webkit-text-stroke-width: .5px; */
+    /* -webkit-text-stroke-color: red; */
+    /* text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+       */
+
 .fa-linkedin {
     size:5x;
 }
+
 
 
 /**** SECTIONS ****/
@@ -145,6 +184,7 @@ body {
 
 #footer-main {
     background-color: #fff;
+
     text-align: center;
 }
 
