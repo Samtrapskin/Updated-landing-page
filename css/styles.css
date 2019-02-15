@@ -3,20 +3,20 @@ body {
 Background-color:#050404;
 }
 h1 {
-    /* font-family: font-family: 'Archivo Narrow', sans-serif  */
-    /* font-family: 'Poppins', sans-serif !important; */
-    font-family: 'Roboto', sans-serif !important;
-    /* font-family: 'Rubik', sans-serif !important; */
+   
+    font-family: 'Helvetica75';
+    
     color: #fff;
     font-weight: 900;
     line-height: 1 !important;
-    font-size: 8.5rem !important;
+    font-size: 5.5rem !important;
 
 }
 
 .greeting {
-    font-family: 'Pontano Sans', sans-serif;
+    font-family: 'Helvetica75';
     margin: 50px auto 20px auto;
+    font-weight:bold;
     color:#000000;
     font-size: 1.7em;
 }
@@ -102,23 +102,16 @@ body {
 
 /* FOOTER */
 
-/* .pop {
-    color: #fafafa;;
-    background-color:#3b49dd;
-     */
-    .pop{
-        background: url(/bgclip/img/paint.png) repeat, white;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        -webkit-animation-name: masked-animation;
-        -webkit-animation-duration: 40s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-    }
-    @-webkit-keyframes masked-animation {
-        0% {background-position: left bottom;}
-        100% {background-position: right bottom;}
-    }
+.pop {
+    color: #e5629f;
+    /* background-color:#3b49dd; */
+}
+
+.pop-blue {
+    color: #1b57fc;
+}
+    /* .pop{
+         */
     /* background-color:black; */
     /* -webkit-text-decoration: hotpink double underline;
     text-decoration: hotpink double underline; */
@@ -160,27 +153,9 @@ body {
 
 }
 
-#testimonials {
-    text-align: center;
-    background-color: #ef8172;
-    color: #fff;
-}
-
-#press {
-    background-color: #ef8172;
-    text-align: center;
-    padding-bottom: 3%;
-}
 
 
-#pricing {
-    text-align: center;
-}
 
-#cta {
-    text-align: center;
-    background-color: #ff4c68;
-}
 
 #footer-main {
     background-color: #fff;
