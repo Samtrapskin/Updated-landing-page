@@ -41,12 +41,12 @@ html, body {
         background:#fff;
         display:inline-block;
         border-radius:51%;
-        animation:animate 5s linear infinite;
+        animation:animate 2s ;
         opacity:0;
     }
     .loader span:nth-child(1) {
-        animation-delay:0.8s;
-        background:#00c2ff;
+        animation-delay:3s;
+        background:#1b57fc;
     }
     .loader span:nth-child(2) {
         animation-delay:0.4s;
@@ -54,15 +54,19 @@ html, body {
     }
     .loader span:nth-child(3) {
         animation-delay:0.2s;
-        background:#ff1b78;
+        background:#ff0000;
     }
     .loader span:nth-child(4) {
         animation-delay:0.2s;
-        background:#ff1b78;
+        background:#50912B;
     }
     .loader span:nth-child(5) {
         animation-delay:0.2s;     
-        background:#ff0000;
+        background: rgb(59,103,158); /* Old browsers */
+background: -moz-linear-gradient(left, rgb(59,103,158) 0%, rgb(22,74,142) 41%, rgb(127,224,193) 63%, rgb(43,136,217) 100%, rgb(125,185,232) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgb(59,103,158) 0%,rgb(22,74,142) 41%,rgb(127,224,193) 63%,rgb(43,136,217) 100%,rgb(125,185,232) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgb(59,103,158) 0%,rgb(22,74,142) 41%,rgb(127,224,193) 63%,rgb(43,136,217) 100%,rgb(125,185,232) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b679e', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 */
     }
     
     @keyframes animate {
@@ -74,10 +78,11 @@ html, body {
             transform: translateX(-100px);
             opacity:1;
         }
-        50% {
+        
+         50% {
             transform: translateX(0);
             opacity:1;
-        }
+        }  
         75% {
             transform: translateX(0);
             opacity:1;
