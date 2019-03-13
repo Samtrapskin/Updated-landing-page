@@ -25,12 +25,6 @@ h1 {
     color: #fff;
 }
 
-/* 
-75% {
-    font-size: 300%;
-    margin-left: 25%;
-    width: 150%;
-} */
 
 
 .loader {
@@ -49,31 +43,56 @@ h1 {
     background: #fff;
     display: inline-block;
     border-radius: 50%;
-    /* animation-play-state: running; */
-  
+    opacity: 1;
+}
+.tri-loader {
+    position: absolute;
+    top: 34%;
+    transform: translateY(100%);
+    width: 100%;
+    height: 10px;
+    float: left;
+    margin-left: 23mm;
+}
 
-    /* animation-name: moveRight;
-    animation-duration: 9s;
-    animation-iteration-count: infinite;     */
-
+.tri-loader span {
+    width: 30px;
+    height: 30px;
+    /* background: #fff; */
+    display: inline-block;
+    /* border-radius: 50%; */
     opacity: 1;
 }
 
-@keyframes moveRight  {
-    96%, 100% {
-        opacity:1;
-    }
+
+.tri-loader span{
+    animation-delay: 0.5s;
+    color: #ffe837; 
 }
-@-moz-keyframes moveRight  {
-    96%, 100% {
-        opacity:1;
-    }
+
+.parallel-loader {
+    position: absolute;
+    top: 34%;
+    transform: translateY(100%);
+    width: 100%;
+    height: 10px;
+    float: left;
+    margin-left: 33mm;
 }
-@-webkit-keyframes moveRight {
-    96%, 100% {
-        opacity:1;
-    }
+.parallel-loader span {
+    width: 30px;
+    height: 30px;
+    /* background: #fff; */
+    display: inline-block;
+    /* border-radius: 50%; */
+    opacity: 1;
 }
+
+.parallel-loader span{
+    animation-delay: 0.5s;
+    color: #ff0000; 
+}
+
 
 .loader span:nth-child(1) {
     animation-delay: .7s;
@@ -81,173 +100,204 @@ h1 {
 
 }
 
-.loader span:nth-child(2) {
-    animation-delay: 0.5s;
-    background: #ffe837;
-}
 
-.loader span:nth-child(3) {
-    animation-delay: 0.3s;
-    background: #ff0000;
-}
 
 .loader span:nth-child(4) {
     animation-delay: 0.1s;
     background: #50912B;
 
-} 
+}
 
 
- @keyframes moveRight {
+
+@keyframes fade {
     0% {
-        transform: translateX(-200px);
-        opacity: 0;
+        opacity: 1;
     }
 
     25% {
-        opacity: 1;
-
-
+        opacity: 0;
     }
 
     50% {
+        /* color: yellow; */
+        opacity: 0;
+    }
 
+    100% {
         opacity: 1;
+    }
+}
+
+@keyframes color  {
+    0% {
+        transition: background-color 0.2s ease;
+        background-color: #1b57fc;
+    }
+
+    25% {
+        transition: background-color 0.4s ease;
+        background-color: #ff0000;
+    }
+
+    50% {
+        transition: background-color 0.6s ease;
+        background-color: #ffe837;
     }
 
     75% {
-
-        opacity: 1;
-    }
-
-    90% {
-        transform: translateY(5px);
-
-        /* transform: translateY(0px); */
-        opacity: 1;
-    }
-
-
-    100% {
-        
-        transform: translateY(-5px);
-      
-
-
-
-
-
-        opacity: 1;
-    }
-
-}
- 
-  @keyframes fade {
-    0% {
-      opacity: 1;
-    }
-    25% { 
-      opacity: 0;
-    }
-    50% {
-        color: yellow;
-    }
-
-    100%  {
-      opacity: 1;
-    }
-}
-
-@keyframes color {
-    0%{
-        transition: background-color 0.2s ease;
-         background-color: #1b57fc;
-     }
-    25%{
-        transition: background-color 0.2s ease;
-         background-color: #ff0000;
-     }
- 50%{
-    transition: background-color 0.2s ease;
-     background-color: #ffe837;
- }
- 100%  {
-    background-color: #1b57fc;
- }
-
-}
-
-@keyframes color-yellow {
-    50%{
-       transition: background-color 0.2s ease;
-        background-color: #ff0000;
-    }
-    100%  {
-       background-color: #ffe837;
-    }
-   
-}
-
-@keyframes color-red {
-    50%{
-       transition: background-color 0.2s ease;
+        transition: background-color 0.8s ease;
         background-color: #50912B;
     }
-    100%  {
-       background-color: #ff0000;
+
+    100% {
+        transition: background-color 1s ease;
+
+        background-color: #1b57fc;
     }
-   
+
+}
+
+@keyframes color-triangle {
+    0% {
+        transition: background-color 0.2s ease;
+        background-color: #ffe837;
+    }
+
+    25% {
+        transition: background-color 0.4s ease;
+        background-color: #ff0000;
+    }
+
+    50% {
+        transition: background-color 0.6s ease;
+        background-color: #50912B;
+    }
+
+
+    75% {
+        transition: background-color 0.8s ease;
+        background-color: #1b57fc;
+    }
+
+    100% {
+        transition: background-color 1s ease;
+        background-color: #ffe837;
+    }
+
+}
+
+@keyframes color-parallel {
+    0% {
+        transition: background-color 0.2s ease;
+        background-color: #ff0000;
+    }
+
+    25% {
+        transition: background-color 0.4s ease;
+        background-color: #ffe837;
+    }
+
+    50% {
+        transition: background-color 0.6s ease;
+        background-color: #50912B;
+    }
+
+    75% {
+        transition: background-color 0.8s ease;
+        background-color: #1b57fc;
+    }
+
+    100% {
+        transition: background-color 1s ease;
+        background-color: #ff0000;
+    }
+
+
+
+
 }
 
 @keyframes color-green {
-    50%{
-       transition: background-color 0.2s ease;
+    0% {
+        transition: background-color 0.2s ease;
         background-color: #50912B;
     }
-    100%  {
-       background-color: #1b57fc;
-    }
-   
-}
-    
 
- 
-  .blue {
+    25% {
+        transition: background-color 0.4s ease;
+        background-color: #1b57fc;
+    }
+
+    50% {
+        transition: background-color 0.6s ease;
+        background-color: #ffe837;
+    }
+
+    50% {
+        transition: background-color 0.8s ease;
+        background-color: #ff0000;
+    }
+
+    100% {
+        transition: background-color 0.2s ease;
+        background-color: #50912B;
+    }
+
+}
+
+
+
+.blue {
     -webkit-animation: fade 4s 1s infinite linear alternate,
-    rotate 4s 1s infinite linear alternate;
+        rotate 4s 1s infinite linear alternate;
     -moz-animation: fade 4s 1s infinite linear alternate;
     -ms-animation: fade 4s 1s infinite linear alternate;
     -o-animation: fade 4s 1s infinite linear alternate;
     animation: color 4s 1s infinite linear alternate;
- 
-  }
 
-  .yellow {
+}
+
+.triangle {
+   
     -webkit-animation: fade 4s 1s infinite linear alternate,
-    rotate 4s 1s infinite linear alternate;
+        rotate 4s 1s infinite linear alternate;
     -moz-animation: fade 4s 1s infinite linear alternate;
     -ms-animation: fade 4s 1s infinite linear alternate;
     -o-animation: fade 4s 1s infinite linear alternate;
-    animation: color-yellow 4s 1s infinite linear alternate;
-  }
+    animation: color-triangle 4s 1s infinite linear alternate;
+}
 
-  .red {
+.parallel {
+
     -webkit-animation: fade 4s 1s infinite linear alternate,
     rotate 4s 1s infinite linear alternate;
+-moz-animation: fade 4s 1s infinite linear alternate;
+-ms-animation: fade 4s 1s infinite linear alternate;
+-o-animation: fade 4s 1s infinite linear alternate;
+animation: color-parallel 4s 1s infinite linear alternate;
+
+}
+
+
+
+.red {
+    -webkit-animation: fade 4s 1s infinite linear alternate,
+        rotate 4s 1s infinite linear alternate;
     -moz-animation: fade 4s 1s infinite linear alternate;
     -ms-animation: fade 4s 1s infinite linear alternate;
     -o-animation: fade 4s 1s infinite linear alternate;
     animation: color-red 4s 1s infinite linear alternate;
-  }
+}
 
-  .green{
+.green {
     -webkit-animation: fade 4s 1s infinite linear alternate,
-    rotate 4s 1s infinite linear alternate;
+        rotate 4s 1s infinite linear alternate;
     -moz-animation: fade 4s 1s infinite linear alternate;
     -ms-animation: fade 4s 1s infinite linear alternate;
     -o-animation: fade 4s 1s infinite linear alternate;
     animation: color-green 4s 1s infinite linear alternate;
-  }
+}
 
 p {
     margin: 0;
