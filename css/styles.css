@@ -52,7 +52,7 @@ h1 {
     width: 100%;
     height: 10px;
     float: left;
-    margin-left: 23mm;
+    margin-left: 24.3mm;
 }
 
 .tri-loader span {
@@ -62,36 +62,36 @@ h1 {
     display: inline-block;
     /* border-radius: 50%; */
     opacity: 1;
-}
-
-
-.tri-loader span{
     animation-delay: 0.5s;
     color: #ffe837; 
 }
 
+
+
 .parallel-loader {
     position: absolute;
-    top: 34%;
+    top: 29.1%;
     transform: translateY(100%);
-    width: 100%;
-    height: 10px;
     float: left;
-    margin-left: 33mm;
+    margin-left: 35mm;
+    
 }
 .parallel-loader span {
-    width: 30px;
-    height: 30px;
-    /* background: #fff; */
-    display: inline-block;
-    /* border-radius: 50%; */
-    opacity: 1;
+    animation-delay: 0.5s;
+    /* color: red; */
+   
+    width: 0;
+    height: 0;
+    border-left: 20px solid #050404;
+    border-right: 20px solid #050404;
+    border-bottom: 32px solid transparent;
+
+
+
+  
 }
 
-.parallel-loader span{
-    animation-delay: 0.5s;
-    color: #ff0000; 
-}
+
 
 
 .loader span:nth-child(1) {
@@ -106,6 +106,10 @@ h1 {
     animation-delay: 0.1s;
     background: #50912B;
 
+}
+
+.white-space {
+    padding-bottom: 75px;
 }
 
 
@@ -142,7 +146,7 @@ h1 {
 
     50% {
         transition: background-color 0.6s ease;
-        background-color: #ffe837;
+        background-color: #fff;
     }
 
     75% {
@@ -258,6 +262,7 @@ h1 {
 
 }
 
+
 .triangle {
    
     -webkit-animation: fade 4s 1s infinite linear alternate,
@@ -268,7 +273,7 @@ h1 {
     animation: color-triangle 4s 1s infinite linear alternate;
 }
 
-.parallel {
+.pacman {
 
     -webkit-animation: fade 4s 1s infinite linear alternate,
     rotate 4s 1s infinite linear alternate;
