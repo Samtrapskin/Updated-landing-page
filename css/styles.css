@@ -17,7 +17,7 @@ body {
 h1 {
     display: inline-block;
     font-family: 'Helvetica75', 'monterastat', 'sans-serif';
-    margin: 70px 0 0 30px;
+    margin: 160px 0 0 30px;
     color: #fff;
     font-weight: 900;
     line-height: 1 !important;
@@ -67,7 +67,7 @@ h1 {
 }
 .parallel-loader {
     position: absolute;
-    top: 32.1%;
+    top: -13px;
     width: 100%;
     height: 0;
     transform: translateY(100%);
@@ -320,6 +320,7 @@ p {
 .hotdog {
     height: 200px;
     width: 200px;
+    margin: 160px 0 0 0;
     border-radius: 50%;
     margin-left: 240px;
 }
@@ -488,7 +489,7 @@ width: 10px;
    }
 
    .bluestem {
-    height: 100px;
+    height: 125px;
     width: 300px;
    }
 
@@ -525,7 +526,7 @@ width: 10px;
 
 #footer-main {
     background-color: #fff;
-    margin-top: 133px;
+    margin-top: 200px;
     text-align: center;
 }
 
