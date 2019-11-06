@@ -14,10 +14,11 @@ body {
 
 
 
+
 h1 {
     display: inline-block;
     font-family: 'Helvetica75', 'monterastat', 'sans-serif';
-    margin: 160px 0 0 30px;
+    margin: 90px 0 0 auto;
     color: #fff;
     font-weight: 900;
     line-height: 1 !important;
@@ -108,7 +109,7 @@ h1 {
 }
 
 .white-space {
-    padding-bottom: 55px;
+    padding: 45px;
 }
 
 
@@ -326,7 +327,7 @@ p {
 }
 .greeting {
     font-family: 'Helvetica75';
-    margin: 87px auto 20px auto;
+    margin: auto;
     font-weight: bold;
     color: #000000;
     font-size: 1.7em;
@@ -362,17 +363,15 @@ a {
     float: right;
 }
 
-.nav-item::focus {
-    color: #e5629f !important;
-}
 
 .nav-item,
 .active {
     color: #e5629f;
-
 }
 
-.nav-item::after {
+
+
+.nav-item:after {
 
     content: '';
     display: block;
@@ -382,9 +381,10 @@ a {
     transition: 0.6s;
 }
 
-.nav-item:hover::after {
+.nav-item:hover:after {
     width: 100%;
-    color: d6f71d;
+    color: #e5629f;
+   
 }
 
 
@@ -396,6 +396,7 @@ a {
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show,
 .navbar-nav .show>.nav-link,
+.navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus,
 .navbar-nav {
     color: #e5629f !important;
@@ -404,20 +405,21 @@ a {
 .nav-link {
     padding: 15px 5px;
     transition: 0.2s;
-
 }
+
+
 
 .dropdown-item.active,
 .dropdown-item:active {
     color: #212529;
 }
 
-/* .dropdown-item:focus,
+.dropdown-item:focus,
 .dropdown-item:hover {
     background: hotpink;
     ;
 
-} */
+}
 
 /* .navbar {
     padding: 0 0 4.5rem 0;
@@ -449,6 +451,7 @@ width: 10px;
 .pop {
     color: white;
     background-color: #e5629f;
+    border-radius: 5%;
     padding: 10px;
     margin: 5px;
     /* background-color:#3b49dd; */
@@ -457,6 +460,7 @@ width: 10px;
 .pop-blue {
     color: white;
     background-color: #1b57fc;
+    border-radius: 5%;
     padding: 10px;
     margin: 5px;
 }
@@ -470,7 +474,11 @@ width: 10px;
     margin-top: 50px;
   }
   .about-1 {
-    margin-bottom: 50px;
+    margin: 50px 0 50px 0;
+  }
+
+  .about-1 p{
+    float: right;
   }
   
   .about-2 {
@@ -498,7 +506,12 @@ width: 10px;
     width: 200px; 
    }
   
-    
+   #home-footer{
+    background-color: #fff;
+   margin-top: 170px;
+   text-align: center;
+   }
+   
 
 
 
@@ -524,11 +537,7 @@ width: 10px;
 
 }
 
-#footer-main {
-    background-color: #fff;
-    margin-top: 200px;
-    text-align: center;
-}
+
 
 /* *** MEDIA QUERY *** */
 @media (max-width: 1028px) {
@@ -548,7 +557,14 @@ width: 10px;
 
     h1 {
         font-size: 4.9rem !important;
+        margin: 40px;
     }
+
+    .hotdog{
+        margin-right: 20px;
+        
+    }
+
 
 
 }
