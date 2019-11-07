@@ -33,7 +33,7 @@ h1 {
     top: 34%;
     transform: translateY(100%);
     width: 100%;
-    height: 10px;
+    height: 22px;
     float: left;
     margin-left: 11mm;
 }
@@ -51,7 +51,7 @@ h1 {
     top: 34%;
     transform: translateY(100%);
     width: 100%;
-    height: 10px;
+    height: 22.5px;
     float: left;
     margin-left: 21.8mm;
 }
@@ -63,15 +63,15 @@ h1 {
     display: inline-block;
     /* border-radius: 50%; */
     opacity: 1;
-    animation-delay: 0.5s;
+    
     color: #ffe837; 
 }
 .parallel-loader {
     position: absolute;
-    top: -13px;
-    width: 100%;
-    height: 0;
+    top: 28%;
     transform: translateY(100%);
+    width: 100%;
+    height: 0;  
     float: left;
     margin-left: 32.4mm;
     
@@ -93,20 +93,20 @@ h1 {
 
 
 
-
+/* 
 .loader span:nth-child(1) {
     animation-delay: .7s;
     background: #1b57fc;
 
-}
+} */
 
 
 
-.loader span:nth-child(4) {
+/* .loader span:nth-child(4) {
     animation-delay: 0.1s;
     background: #50912B;
 
-}
+} */
 
 .white-space {
     padding: 45px;
@@ -253,7 +253,7 @@ h1 {
 
 
 .blue {
-    -webkit-animation: fade 4s 1s infinite linear alternate,
+    -webkit-animation: fade .2s 1s infinite linear alternate,
         rotate 4s 1s infinite linear alternate;
     -moz-animation: fade 4s 1s infinite linear alternate;
     -ms-animation: fade 4s 1s infinite linear alternate;
@@ -262,7 +262,9 @@ h1 {
 
 }
 
-
+.blue::hover {
+    color:yellow;
+}
 .triangle {
    
     -webkit-animation: fade 4s 1s infinite linear alternate,
@@ -319,11 +321,13 @@ p {
 
 
 .hotdog {
+    float: right;
+    margin-top:90px;
     height: 200px;
     width: 200px;
-    margin: 160px 0 0 0;
+    
     border-radius: 50%;
-    margin-left: 240px;
+    
 }
 .greeting {
     font-family: 'Helvetica75';
@@ -566,6 +570,13 @@ width: 10px;
     }
     .white-space{
         padding: 15px 0;
+    }
+
+    .loader {
+        height: 21px;
+    }
+    .tri-loader {
+    height: 22px;
     }
 
 
