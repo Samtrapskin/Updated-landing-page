@@ -683,3 +683,65 @@ width: 10px;
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
+
+/* #******************************************* #*/
+                PORTFOLIO
+/* #******************************************* #*/
+
+.section-headings h2 {
+    color: whitesmoke;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    padding-top: 12px;
+    font-size: 30px;
+    font-weight: 100;
+    font-family: "Krona one", "Paytone one", "Roboto", "Ubuntu", "Verdana", "Arial";
+    font-style: normal;
+}
+
+.section-headings h3 {
+    color: whitesmoke;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: "Ubuntu", "Paytone one", "Roboto", "Verdana", "Arial";
+    font-style: italic;
+}
+
+.portfolio .protfolio-items {
+    overflow: hidden;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;
+    -webkit-transition-delay: .5s;
+    -moz-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s;
+}
+
+.portfolio .protfolio-items .portfolio-item {
+    line-height: 0;
+    margin-bottom: 15px;
+}
+
+.fadeInUpSmall {
+    -webkit-animation-name: fadeInUpSmall;
+    -moz-animation-name: fadeInUpSmall;
+    -o-animation-name: fadeInUpSmall;
+    animation-name: fadeInUpSmall;
+}
+
+.portfolio .protfolio-items .portfolio-item a {
+    position: relative;
+    overflow: hidden;
+}
+
+a {
+    font-family: 'Helvetica75', 'Montserrat-bold', sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-size: 1.4rem;
+}
