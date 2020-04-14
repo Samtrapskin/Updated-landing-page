@@ -16,7 +16,7 @@ body {
     height:100%;
 }
 
-#name-gif-container{
+#name-gif{
     margin-top:30px;
 }
 h1 {
@@ -30,7 +30,13 @@ h1 {
     color: #fff;
 }
 
-
+#shapes-container{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    height: 115px;
+}
 
 .color-circle {
     position: relative;
@@ -324,6 +330,17 @@ p {
     color: #fff;
     font-weight: 900;
     font-size: 1.2rem;
+}
+
+#myName{
+    display: inline-block;
+    font-family: 'Helvetica75', 'monterastat', 'sans-serif';
+    margin: 90px 0 0 auto;
+    color: #fff;
+    font-weight: 900;
+ 
+   font-size: 40px; 
+  
 }
 
 
