@@ -344,8 +344,8 @@ p {
 }
 
 
-.hotdog {
-    float: right;
+.gif {
+    
     margin-top:90px;
     height: 200px;
     width: 200px;
@@ -369,7 +369,7 @@ h2 {
     line-height: 1.5
 }
 
-a {
+a.nav-link {
     font-family: 'Helvetica75', 'Montserrat-bold', sans-serif;
     ;
     font-weight: bold;
@@ -730,6 +730,35 @@ width: 10px;
     display: block;
     position: relative;
     justify-content: center;
+  } 
+
+ /* 
+ ****************
+ PORTFOLIO CARDS 
+ ****************
+ */
+  .portfolio-card-text{
+    font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      color:#000000;
+
+  }
+
+  .portfolio-card-body{
+    height: 210px;
+  }
+
+  
+ a.port-card-anchor:link {
+     text-decoration: none;
+     color:#000000;
+ }
+
+  a.port-card-anchor:hover {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 200;
+    color: transparent;
   }
 
   .project-tile-row {

@@ -18,6 +18,7 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto:900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <!--===============================================================
                BOOTSTRAP
   ===================================================================-->
@@ -49,7 +50,7 @@
       <!--===============================================================
   *** NAVBAR ***
   ===================================================================-->
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
           <div class="col">
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -62,10 +63,10 @@
                     <a class="nav-link" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">Portfolio</a>
+                    <a class="nav-link" href="#">Portfolio</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#resume" class="nav-link">Contact</a>
+                    <a class="nav-link" href="#resume" >Contact</a>
                   </li>
 
                   <li class="nav-item"></a>
@@ -81,16 +82,16 @@
       <!--===============================================================
   *** NAME ***
   ===================================================================-->
-      <div class="container" id="name-gif">
+      <div class="container-fluid" id="name-gif">
         <div class="row">
-          
+          <div class="col-1"></div>
           <div class="col-lg-5 col-md-10">
             <h1 id="myName">Samuel<br>Trapskin</h1>
           </div>
           <div class="col-lg-5 col-md-10">
-            <img class="hotdog" src="images/hotdawg.gif" alt="hot dog animation">
+            <img class="gif" src="images/hotdawg.gif" alt="hot dog animation">
           </div>
-          <div class="col-2"></div>
+          <div class="col-1"></div>
         </div>
       </div>
       <!-- End NAME -->
@@ -99,7 +100,7 @@
       <!--===============================================================
   *** SHAPES AND GIF ***
   ===================================================================-->
-      <div class="container">
+      <div class="container-fluid">
     
             <div class="color-circle">
               <span class="blue"></span>
@@ -121,7 +122,7 @@
         <div class="container-fluid home">
           <div class="row white-space">
             <div class="greeting col">
-              <p>I'm a Front End<span class="pop">Web Design</span>&amp; <span class="pop-blue">Developer</span></p>
+              <p>I'm a Front End<span class="pop-blue">Web Developer</span>&amp; <span class="pop">Designer</span></p>
             </div>
           </div>
         </div>
@@ -209,34 +210,69 @@
         PORTFOLIO SECTION
     ************************** -->
     <section id="portfolio">
-      <div class="project-container">
-        <h3 id="portfolio-header">Some things i've worked/ing on</h3>
-        <div class="row project-tile-row">
-          <div class="col-3 col-xs-6">
-            <img class="img-responsive project-tile" src="images/expensur.png" alt="Avatar">
-  <div class="project-text-block">
-            <div class="project-text">This was a project blah blah blah</div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3 col-xs-6">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/expensur.png" alt="Card image cap">
+              <div class="portfolio-card-body">
+                <h5 class="card-title">Expensur</h5>
+                <p class="portfolio-card-text">This was a final project I made from my Bootcamp. It was an expense tracker built in React.</p>
+                <a href="#" class="btn btn-primary">See more</a>
+              </div>
+            </div>
           </div>
+
+          <div class="col-lg-3 col-xs-6">
+            <div class="card" style="width: 18rem;">
+              <a class="port-card-anchor" href="">
+              <img class="card-img-top" src="images/reve.png" alt="Card image cap">
+              
+              <div class="portfolio-card-body">
+                <h5 class="card-title">Reve Academy</h5>
+                <p class="portfolio-card-text">This was group project I made from my Bootcamp. It was a student portal app that allowed students and faculty to interact outside of the classroom. This was also built in React.</p>
+              </div>
+                </a>
+              </div>
+            </div>
+          
+
+          <div class="col-lg-3 col-xs-6">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/tindog-2.png" alt="Card image cap">
+              <div class="portfolio-card-body">
+                <h5 class="card-title">Tindog</h5>
+                <p class="portfolio-card-text">This was landing page I made to practice techniques in Bootstrap.</p>
+                <a href="#" class="btn btn-primary">See more</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-xs-6">
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="images/victory-frontpage.png" alt="Card image cap">
+              <div class="portfolio-card-body">
+                <h5 class="card-title">Victory Bicycle Co.</h5>
+                <p class="portfolio-card-text">This was landing page I made to practice techniques in html,CSS, Bootstrap and jQuery and PHP</p>
+                <a href="#" class="btn btn-primary">See more</a>
+              </div>
+            </div>
+          </div>
+
         </div>
 
-        <div class="col-3 col-xs-6">
-            <img class="img-responsive project-tile" src="images/reve.png" alt="Avatar">
-  <div class="project-text-block">
-            <div class="project-text">This was a project blah blah blah</div>
-          </div>
-        </div>
+      
 
-        <div class="col-3 col-xs-6">
-            <img class="img-responsive project-tile" src="images/tindog-2.png" alt="Avatar">
-  <div class="project-text-block">
-            <div class="project-text">This was a project blah blah blah</div>
-          </div>
-        </div>
-      </div>
+
+
+
+      
+  
   
 
       
-      <div class="row project-tile-row">
+     <!--- <div class="row project-tile-row">
         <div class="col-3 col-xs-6">
             <img class="img-responsive project-tile" src="images/victory-frontpage.png" alt="Avatar">
   <div class="project-text-block">
@@ -257,7 +293,7 @@
           </div>
         </div>
 
-      </div>
+      </div> -->
 
       </div>
  <!-- END Container -->
@@ -293,34 +329,15 @@
           </div>
         </div>
       </section> -->
-  </div>
+ 
+  <!-- <section class="footer">
 
-  <section class="footer">
-    <footer id="footer-main">
-
-      <div class="container-fluid">
-        <div class="row">
-          <div class="greeting-resume col">
-            <p id="contact">You can contact me at <a href="mailto:samtrapskin@gmail.com">samtrapskin@gmail.com</a>.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="greeting col">
-            <a href="https://www.linkedin.com/in/samuel-trapskin-24557171/"><i class="fab fa-linkedin"
-                style="font-size: 3rem; color: #342D72;"></i></a>
-          </div>
-        </div>
-      </div>
-
-    </footer>
-  </section>
+  </section> -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
   </script>
-  <script type="text/javascript" src="jquery.onepage-scroll.js"></script>
-  <link type="text/css" href="css/onepage-scroll.css" rel="stylesheet">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
   </script>
@@ -331,7 +348,7 @@
     integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
   </script>
 
-  </div>
+  
 </body>
 
 </html>
