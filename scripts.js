@@ -16,7 +16,9 @@ function readyNow() {
     // $('.location').mouseenter (locMouseEnter);
     // $('.location').mouseleave (locMouseLeave);
 
-
+<div class="d-flex flex-wrap">
+  ...
+</div>
   
         
  

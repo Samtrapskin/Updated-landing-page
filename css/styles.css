@@ -737,6 +737,11 @@ width: 10px;
  PORTFOLIO CARDS 
  ****************
  */
+
+ .card{
+     margin:auto;
+     max-width: 17em;
+ }
   .portfolio-card-text{
     font-family: 'Roboto', sans-serif;
       font-size: 14px;
@@ -749,16 +754,20 @@ width: 10px;
   }
 
   
- a.port-card-anchor:link {
+ a.port-card-anchor, a.card-title,a.technologies-used:link {
      text-decoration: none;
      color:#000000;
  }
 
-  a.port-card-anchor:hover {
+  /* a.port-card-anchor:hover {
     text-decoration: none;
     font-size: 14px;
     font-weight: 200;
-    color: transparent;
+  } */
+
+  .technologies-used{
+      margin-top: 15px;
+      font-size:  12px;
   }
 
   .project-tile-row {
