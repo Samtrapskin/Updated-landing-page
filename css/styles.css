@@ -726,10 +726,10 @@ width: 10px;
     margin: 12px auto;
 }
 
-.project-container {
-    display: block;
-    position: relative;
-    justify-content: center;
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   } 
 
  /* 
@@ -737,10 +737,51 @@ width: 10px;
  PORTFOLIO CARDS 
  ****************
  */
+#main {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+ .port-card{
+     max-width: 200px;
+     margin:0 12px 12px 12px;
+     background-color: #fff;
+     background-clip: border-box;
+     border: 1px solid rgba(0,0,0,.125);
+     border-radius: .25rem;
+ }
 
- .card{
-     margin:auto;
-     max-width: 17em;
+ #dogapp{
+    width: 96%;
+    padding-left: 5px;
+}
+ 
+
+ /* @media (min-width: 792px) {
+    #main div{
+    max-width: 15em;
+ }
+ } */
+ #portfolio-container{
+    display: flex;
+    flex-flow: wrap;
+    }
+
+ .port-card:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+ .port-card-img-top{
+     max-width: 100%;
+ }
+
+ .port-card-title {
+    font-family: 'Roboto', sans-serif;
+     font-size: 12px;
+     margin: 12px 10px 0 10px;
+     text-transform: uppercase;
  }
   .portfolio-card-text{
     font-family: 'Roboto', sans-serif;
@@ -750,8 +791,10 @@ width: 10px;
   }
 
   .portfolio-card-body{
-    height: 210px;
+    height: 90px;
   }
+
+  
 
   
  a.port-card-anchor, a.card-title,a.technologies-used:link {
@@ -766,8 +809,8 @@ width: 10px;
   } */
 
   .technologies-used{
-      margin-top: 15px;
-      font-size:  12px;
+    margin: 15px 10px 0 10px;
+    font-size: 10px;
   }
 
   .project-tile-row {
