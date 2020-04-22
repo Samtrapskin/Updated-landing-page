@@ -46,34 +46,34 @@
 
 <body>
 
-  <section id="home">
+
     <!--===============================================================
   *** NAVBAR ***
   ===================================================================-->
-    <div class="container-fluid">
-      <div class="navigate row">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-          <button class="navbar-toggler" type="button" data-target="#navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a href="#resume" class="nav-link">Contact</a>
-              </li>
+  <div class="container" id="nav-container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+    <button class="navbar-toggler navbar-light bg-secondary" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
 
-              <li class="nav-item"></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
 <!--   
           <nav class="navbar navbar-expand-lg navbar-dark">
             <button class="navbar-toggler" type="button" data-target="#navigation">
@@ -127,30 +127,29 @@
        
         <!-- </div>
       </div> -->
-    </div>
+    
     <!-- End NAVBAR -->
 
     <!--===============================================================
   *** NAME ***
   ===================================================================-->
-    <div class="container-fluid" id="name-gif">
+     <div class="container-fluid" id="name-gif">
       <div class="row">
         <div class="col-lg-5 col-md-6">
           <h1 id="myName">Samuel<br>Trapskin</h1>
         </div>
-        <div class="hidden-xs">
+        <div class="col-lg-5 col-md-6">
           <img class="gif" src="css/images/hotdawg.gif" alt="hot dog animation">
         </div>
       </div>
-    </div>
     <!-- End NAME -->
 
 
     <!--===============================================================
   *** SHAPES AND GIF ***
   ===================================================================-->
-    <div class="container-fluid">
-
+  <div class="row">
+    <div class="col">
       <div class="color-circle">
         <span class="blue"></span>
       </div>
@@ -160,25 +159,25 @@
       <div class="color-triangle">
         <span class="pacman"></span>
       </div>
-
     </div>
-    <!-- End SHAPES and GIF-->
-
-
-
-    <div class="container-fluid">
-
-    <div id="home-footer">
-      <div class="container-fluid home">
-        <div class="row white-space">
-          <div class="greeting col">
-            <p>I'm a Front End<span class="pop-blue">Web Developer</span>&amp; <span class="pop">Designer</span></p>
-          </div>
+  </div>
+  <div id="home-footer">
+    <div class="container-fluid home">
+      <div class="row white-space">
+        <div class="greeting col">
+          <p>I'm a Front End<span class="pop-blue">Web Developer</span>&amp; <span class="pop">Designer</span></p>
         </div>
       </div>
     </div>
   </div>
-  </section>
+</div>
+    <!-- End SHAPES and GIF-->
+
+
+
+
+
+ 
 
 
 

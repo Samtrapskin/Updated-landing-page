@@ -10,15 +10,30 @@ body {
     height: 100%;
 }
 
-
-
 #home {
     height:100%;
 }
 
+#nav-container {
+    display:flex;
+    justify-content: flex-end;
+}
 #name-gif{
     margin-top:30px;
+    height:100%;
 }
+
+@media (max-width: 1023px) {
+    #name-gif {
+    text-align: center;
+    }
+    .color-circle,.color-square,.triangle {
+        justify-content: center;
+        margin-top:8px;
+    }
+}
+
+
 h1 {
     display: inline-block;
     font-family: 'Helvetica75', 'monterastat', 'sans-serif';
@@ -363,7 +378,7 @@ p {
     margin: auto;
     font-weight: bold;
     color: #000000;
-    font-size: 1.7em;
+    font-size: 14px;
 }
 
 /* Navigation bar */
@@ -378,7 +393,7 @@ a.nav-link {
     font-family: 'Helvetica75', 'Montserrat-bold', sans-serif;
     ;
     font-weight: bold;
-    color: #000000;
+    color: #ffffff;
     font-size: 1.4rem;
 }
 
@@ -397,9 +412,12 @@ a.nav-link {
     margin-right: 50px;
 }
 
-.nav-item,
-.active {
+.navbar-light .navbar-nav .nav-link {
     color: #e5629f;
+}
+.nav-item active {
+    color: blue;
+    
 }
 
 
@@ -432,7 +450,7 @@ a.nav-link {
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus,
 .navbar-nav {
-    color: #e5629f !important;
+    color: #1b57fc!important;
 }
 
 .nav-link {
@@ -547,21 +565,10 @@ width: 10px;
     display: block;
     width: 100%;
    text-align: center;
-   position: absolute;
-   bottom:0;
+   margin: 100px 0;
    }
 
-   
 
-   #home-footer {
-    background-color: #ffffff;
-    text-align: center;
-    display: flex;
-    width: 100%;
-    text-align: center;
-    /* position: absolute; */
-    bottom: 0;
-}
 
 /**** SECTIONS ****/
 
@@ -629,16 +636,20 @@ width: 10px;
 
 }
 
-@media (max-width: 662px) {
+@media (max-width: 403px) {
 
     .greeting {
-        font-size: 14px;
+        font-size: 13px;
         ;
+    }
+
+    #home-footer {
+        text-align: start;
     }
 
     .pop,
     .pop-blue {
-        padding: 7px;
+        padding: 4px;
     }
 
     #contact {
