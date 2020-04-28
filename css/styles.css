@@ -409,7 +409,11 @@ a.nav-link {
     color: #ffffff;
     font-size: 1.4rem;
 }
-
+.project-container {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    background-color: #fff;
+}
 #contact {
     font-family: 'Helvetica75', 'Montserrat-bold', sans-serif;
 
@@ -418,6 +422,20 @@ a.nav-link {
     font-size: 1.4rem;
 }
 
+.bio {
+    font-size:  16px;
+    color: #5e5e5e;
+    font-family: 'Helvetica', 'Verdana', 'Montserrat-bold', sans-serif;
+    font-weight: 300;
+}
+
+.bio p {
+    margin: 25px 0;
+}
+
+.bio h3 {
+    color: #000000;
+}
 
 /****Section classes ****/
 .navigate {
@@ -554,11 +572,7 @@ width: 10px;
      background-color: #fff;
    }
 
-   .mn {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-   }
+ 
 
    .bluestem {
     height: 125px;
@@ -779,6 +793,7 @@ width: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin: 50px 0;
   } 
 
  /* 
@@ -790,6 +805,7 @@ width: 10px;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: auto;
 }
  .port-card{
@@ -812,11 +828,16 @@ width: 10px;
     max-width: 15em;
  }
  } */
- #portfolio-container{
-    display: flex;
-    flex-flow: wrap;
+ #portfolio{
+    margin: 50px 0;
     }
 
+#project-header h3{
+    margin: 50px 0;
+    font-family: 'Helvetica', 'Verdana', 'Montserrat-bold', sans-serif;
+    color: #fff; 
+    text-align: center;
+}
  .port-card:hover{
     transform: scale(1.1);
     transition: transform 1s;
