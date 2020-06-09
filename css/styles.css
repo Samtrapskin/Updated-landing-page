@@ -531,7 +531,6 @@ width: 10px;
 .pop {
     color: white;
     background-color: #e5629f;
-    border-radius: 5%;
     padding: 10px;
     margin: 5px;
     /* background-color:#3b49dd; */
@@ -540,8 +539,8 @@ width: 10px;
 .pop-blue {
     color: white;
     background-color: #1b57fc;
-    border-radius: 5%;
     padding: 10px;
+    padding-right: 14px;
     margin: 5px;
 }
 
@@ -850,6 +849,9 @@ width: 10px;
      max-width: 100%;
  }
 
+ .card-title {
+    text-align: center;
+ }
  .port-card-title {
     font-family: 'Roboto', sans-serif;
      font-size: 12px;
@@ -864,7 +866,7 @@ width: 10px;
   }
 
   .portfolio-card-body{
-    height: 90px;
+    height: 165px;
   }
 
   
@@ -923,4 +925,31 @@ width: 10px;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
+  }
+
+  #contact {
+      margin: 200px 0;
+    }
+#contact-header {
+  margin: 200px 0;
+  font-family: 'Helvetica', 'Verdana', 'Montserrat-bold', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+  #email {
+      color:#ffffff;
+      text-align: center;
+  }
+  #email a {
+    color:#ffffff;
+  }
+
+  #email a:hover {
+    color: hotpink;
+
+  }
+
+  #linkedin-logo {
+      text-align: center;
   }
