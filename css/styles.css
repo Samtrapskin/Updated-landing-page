@@ -20,6 +20,10 @@ body {
     display:flex;
     justify-content: flex-end;
 }
+
+light .navbar-nav .active>.nav-link {
+    float: right;
+}
 #name-gif{
     margin-top:30px;
     
@@ -501,8 +505,9 @@ a.nav-link {
 
 }
 
-/* .navbar {
-    padding: 0 0 4.5rem 0;
+.navbar {
+    position: absolute;
+    justify-content: flex-end;
 }
 
 .navbar-brand {
@@ -512,10 +517,10 @@ a.nav-link {
 }
 
 .nav-item {
-    padding: 0 18px;
+    display: flex;
+    justify-content: flex-end;
 }
 
-.nav-link {
     /* font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300; */
