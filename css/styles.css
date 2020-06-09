@@ -444,7 +444,6 @@ a.nav-link {
     float: right;
     margin-right: 50px;
 }
-
 .navbar-light .navbar-nav .nav-link {
     color: #e5629f;
 }
@@ -452,11 +451,7 @@ a.nav-link {
     color: blue;
     
 }
-
-
-
 .nav-item:after {
-
     content: '';
     display: block;
     width: 0px;
@@ -464,18 +459,14 @@ a.nav-link {
     background: #1b57fc;
     transition: 0.6s;
 }
-
 .nav-item:hover:after {
     width: 100%;
     color: #e5629f;
    
 }
-
-
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
 }
-
 .navbar-nav .active>.nav-link,
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show,
@@ -485,41 +476,45 @@ a.nav-link {
 .navbar-nav {
     color: #1b57fc!important;
 }
-
 .nav-link {
     padding: 15px 5px;
     transition: 0.2s;
 }
-
-
-
 .dropdown-item.active,
 .dropdown-item:active {
     color: #212529;
 }
-
 .dropdown-item:focus,
 .dropdown-item:hover {
     background: hotpink;
-    ;
-
 }
 
 .navbar {
     position: absolute;
     justify-content: flex-end;
 }
+.nav-item {
+    display: flex;
+    justify-content: flex-end;
+}
 
+@media screen and (min-width: 992px) {
+.navbar {
+    position: inherit;
+}
+
+.nav-item {
+    display: inline;
+}
+
+}
 .navbar-brand {
     font-family: 'Ubuntu';
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-.nav-item {
-    display: flex;
-    justify-content: flex-end;
-}
+
 
     /* font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
@@ -887,9 +882,12 @@ width: 10px;
     font-size: 14px;
     font-weight: 200;
   } */
-
+hr {
+    width: 75%;
+    margin: 10px;
+}
   .technologies-used{
-    margin: 15px 10px 0 10px;
+    margin: 0px 10px 0 10px;
     font-size: 10px;
   }
 
