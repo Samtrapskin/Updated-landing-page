@@ -25,13 +25,13 @@ light .navbar-nav .active>.nav-link {
     float: right;
 }
 #name-gif{
-    margin-top:30px;
-    
+    height: 100%; 
 }
 
 @media (max-width: 1023px) {
     #name-gif {
     text-align: center;
+    height: 100%;
     }
 
     #myName {
@@ -670,7 +670,10 @@ width: 10px;
 
     .greeting {
         font-size: 25px;
+        font-family: 'Helvetica75, Helvetica, sans-serif';
+
     }
+
     .white-space {
         padding: 5px 0;
     }
@@ -710,7 +713,7 @@ width: 10px;
 }
 
 .greeting-resume {
-    font-family: 'Helvetica75';
+    font-family: 'Helvetica75, Helvetica, sans-serif';
     margin: 50px auto 00px auto;
     font-weight: bold;
     color: #000000;
