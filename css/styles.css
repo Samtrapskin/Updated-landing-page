@@ -24,14 +24,44 @@ body {
 light .navbar-nav .active>.nav-link {
     float: right;
 }
-#name-gif{
-    height: 100%; 
+
+#banner-load{
+    display: none;;
+    margin: auto;
+}
+
+.gif-build {
+   
+    max-width: 274px;
+    max-height: 250px;
+    -webkit-animation: fade-in 2s ease;
+    -moz-animation: fade-in ease-in-out 2s both;
+    -ms-animation: fade-in ease-in-out 2s both;
+    -o-animation: fade-in ease-in-out 2s both;
+    animation: fade-in 2s ease;
+  } 
+
+  
+
+ 
+  
+  @-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
+  @-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+  @-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+  @keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+
+.gif-build img{
+
+
+max-height: 664px;
+max-width: 636px;
 }
 
 @media (max-width: 1023px) {
     #name-gif {
     text-align: center;
     height: 100%;
+    margin-top: 75px;
     }
 
     #myName {
@@ -53,7 +83,7 @@ light .navbar-nav .active>.nav-link {
     transform: translateY(100%);
     max-width: 100%;
     display: flex;
-    float: left;
+    justify-content: center;
     margin: 0 12px;
 }
 
@@ -62,18 +92,15 @@ light .navbar-nav .active>.nav-link {
     height: 30px;
     background: #fff;
     display: inline-block;
-    border-radius: 50%;
+   
     opacity: 1;
 }
-.color-square {
-    position: relative;
-
-    transform: translateY(100%);
-    width: auto;
-
-    float: left;
-    display: flex;
+#color-triangle{
+    animation-delay: 0.5s;
     margin: 0 12px;
+    border-left: 20px solid #050404;
+    border-right: 20px solid #050404;
+    border-bottom: 32px solid transparent;
 }
 
 .color-square span {
@@ -86,33 +113,10 @@ light .navbar-nav .active>.nav-link {
     
     color: #ffe837; 
 }
-.color-triangle {
-    position: relative;
-   
-    transform: translateY(100%);
-    width: auto;
-   
-    display: flex;
-    float: left;
 
-    margin: 2px 12px;
-}
     
 
-.color-triangle span {
-    animation-delay: 0.5s;
-    /* color: red; */
-   
-    width: 0;
-    height: 0;
-    border-left: 20px solid #050404;
-    border-right: 20px solid #050404;
-    border-bottom: 32px solid transparent;
 
-
-
-  
-}
 
 
 
@@ -276,6 +280,7 @@ light .navbar-nav .active>.nav-link {
 
 
 .blue {
+    border-radius: 50%;
     -webkit-animation: fade .2s 1s infinite linear alternate,
         rotate 4s 1s infinite linear alternate;
     -moz-animation: fade 4s 1s infinite linear alternate;
@@ -345,7 +350,7 @@ p {
 #myName{
     display: inline-block;
     font-family: 'Helvetica75', 'Montserrat', 'sans-serif';
-    margin: 30px auto 0 auto;
+    margin: 65px auto 0 auto;
     color: #fff;
     font-weight: 900;
    font-size: 68px; 
@@ -369,11 +374,14 @@ p {
     border-radius: 50%;
 }
 
-.greeting {
+#home {
+    height: 100%;
+    margin-bottom:  50px;
+}
+
+#greeting-name, #greeting-title {
     font-family: 'Helvetica75', 'Montserrat', 'sans-serif';
-    margin: auto;
     font-weight: bold;
-    color: #000000;
     font-size: 28px;
 }
 
@@ -674,14 +682,8 @@ width: 10px;
 
     }
 
-    .white-space {
-        padding: 5px 0;
-    }
 
 
-#home-footer{
-    display:none;
-}
 
 
 
@@ -959,3 +961,84 @@ hr {
   #linkedin-logo {
       text-align: center;
   }
+
+  #greeting-container {
+    text-align: center;
+    background-color: #ffffff;
+   padding: 30px 0;
+        text-align: center;
+        background-color: #ffffff;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+  
+}
+
+
+  /* @media (min-width: 992px) {
+  .greeting-name {
+    position: absolute;
+    bottom: 0;
+    margin:50px 0;
+  }
+} */
+@media (min-width: 768px) {
+    #myName {
+        font-size: 120px;
+    }
+    #color-triangle{
+    border-left: 29px solid #050404;
+    border-right: 31px solid #050404;
+    border-bottom: 58px solid transparent;
+    }
+    .color-circle span{
+    width: 60px;
+    height: 60px;
+    }
+}
+
+    margin-top: 75px;
+  @media (min-width: 992px) {
+  
+    #greeting-container {
+        text-align: center;
+        background-color: #ffffff;
+        text-align: center;
+        width: 100%;
+    }
+    #greeting-name, #greeting-title {
+        padding:0;
+    }
+    #greeting-name p{
+        float:right;
+    }
+    #greeting-title  p{
+        float:left;
+    }
+}
+
+@media (min-width: 1024px) {
+    #banner-load {
+        display: inherit;
+    }
+    #color-triangle{
+        border-left: 19px solid #050404;
+        border-right: 19px solid #050404;
+        border-bottom: 30px solid transparent;
+        }
+        .color-circle span{
+        width: 30px;
+        height: 30px;
+        }
+
+}
+
+
+
+
+    #flex-container{
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+

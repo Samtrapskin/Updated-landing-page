@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1; maximum-scale=1">
+  <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1">
 
   <title>Sam A. Trapskin</title>
   <link type="text/css" href="css/styles.css" rel="stylesheet">
@@ -17,28 +17,27 @@
   <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <!--===============================================================
-               BOOTSTRAP
-  ===================================================================-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFfnJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!--===============================================================
+               BOOTSTRAP
+  ===================================================================-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+  </script>
+
+
+
+
   <link rel="stylesheet" href="css/styles.css" />
 
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -47,7 +46,8 @@
   <!--===============================================================
   *** NAVBAR ***
   ===================================================================-->
-   <div class="container" id="nav-container">
+  <section id="home">
+  <div class="container" id="nav-container">
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
       <button class="navbar-toggler navbar-light bg-secondary" type="button" data-toggle="collapse"
         data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -71,74 +71,82 @@
         </ul>
       </div>
     </nav>
-  </div> 
-  
+  </div>
+
   <!-- End NAVBAR -->
 
 
   <!--===============================================================
   *** NAME ***
   ===================================================================-->
-  <div class="container-fluid" id="name-gif">
-    <div class="row">
+  
+    <div class="container-fluid" id="name-gif">
+      <div class="row">
 
-      <div class="col-lg-6 col-md-12" id="myName-container">
-        <h1 id="myName">Samuel<br>Trapskin</h1>
-      </div>
-      <div class="col-lg-6 col-md-12 ">
-        <img class="gif" src="css/images/hotdawg.gif" alt="hot dog animation">
-      </div>
-
-      <div class="col-lg-6 col-md-12" id="shapes-container">
-        <div class="color-circle">
-          <span class="blue"></span>
-        </div>
-        <div class="color-square">
-          <span class="triangle"></span>
-        </div>
-        <div class="color-triangle">
-          <span class="pacman"></span>
-        </div>
-      </div>
-
-    </div>
-    <!-- End NAME -->
-
-    <div id="home-footer">
-      <div class="container-fluid home">
-        <div class="row white-space">
-          <div class="col greeting">
-            <p>I'm a Front End<span class="pop-blue">
-                Web Developer</span> &amp; <span class="pop">Designer</span></p>
+        <div class="col-lg-7 col-md-12" id="myName-container">
+          <h1 id="myName">Samuel<br>Trapskin</h1>
+          <div class="color-circle">
+            <span class="blue"></span>
+            <span class="triangle" id="color-triangle"></span>
+            <span class="pacman"></span>
           </div>
-        </div>
+          <!-- <div class="color-square">
+            <span class="triangle"></span>
+          </div>
+          <div class="color-triangle"> -->
+            
+          </div>
+        
+        
+        
+          <div class="col-lg-4 col-md-12 gif-container" id="banner-load"></div>
+        
       </div>
     </div>
-  </div>
-  </div>
-  <div class="wrapper-home-footer-mobile">
 
-    <div id="home-footer-mobile">
-      <div class="container-fluid home-mobile">
-        <div class="row white-space">
-          <div class="col-md-6 col-sm-12 greeting">
-            <p>I'm a Front End</p>
-          </div>
+      
+<!--        
+      <div class="row">
+        <div class="col-lg-1 col-md-4">
+        
         </div>
-        <div class="row white-space">
-          <div class="col-md-6 col-sm-12 greeting-mobile">
-            <p>
-              <span class="pop-blue">Web Developer</span> &amp; <span class="pop">Designer</span></p>
-          </div>
+        <div class="col-lg-1 col-md-4">
+         
         </div>
+        <div class="col-lg-1 col-md-4">
+        
+        </div>
+        </div> -->
+    
+<div id="greeting-container">
+      <div class="row">
+        <div class="col-lg-2"></div>
+
+            <div class="col-lg-3" id="greeting-name">
+              <p>I'm a Front End</p>
+            </div>
+
+            <div class="col-lg-6" id="greeting-title">
+              <p><span class="pop-blue">Web Developer</span> &amp; <span class="pop">Designer</span></p>
+            </div>
+
+            <div class="col-lg-1"></div>
+
+     
+         
+
+        <!-- End NAME -->
       </div>
     </div>
-  </div>
-  </div>
-  </div>
+  </section>
+
+
+
+
   <!-- End SHAPES and GIF-->
 
   <section id="about">
+    <div class="container-fluid">
     <div class="row">
       <div class="col-1 bio"></div>
       <div class="col-10 bio">
@@ -210,7 +218,7 @@
               <h5 class="card-title">Reve Academy</h5>
               <p class="technologies-used"> An app allowing student and teacher interaction along with class resources.
                 My group project from Prime Academy built in React.</p>
-                <hr>
+              <hr>
               <div class="technologies-used">
                 <p>Technologies used:<br /> React, NodeJS, Bootstrap, HTML, CSS and SQL.</p>
               </div>
@@ -285,6 +293,13 @@
       </div>
     </div>
   </section>
+
+
+  <script>
+    var gifs = ['bob.gif', 'stanley.gif', 'truffle.gif', 'hotdawg.gif'];
+    $('<img class="gif-build" src="css/images/gifs/' + gifs[Math.floor(Math.random() * gifs.length)] + '">').appendTo(
+      '#banner-load');
+  </script>
 </body>
 
 </html>
