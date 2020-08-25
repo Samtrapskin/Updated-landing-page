@@ -593,7 +593,9 @@ width: 10px;
     display: block;
     width: 100%;
    text-align: center;
-   margin: 100px 0 125px 0;
+   position: absolute;
+   bottom: 0;
+   
    }
 
 
@@ -669,7 +671,6 @@ width: 10px;
 
     .greeting {
         font-size: 25px;
-        font-family: 'Helvetica75, Helvetica, sans-serif';
 
     }
 
