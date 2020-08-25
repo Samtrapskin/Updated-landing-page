@@ -344,7 +344,7 @@ p {
 
 #myName{
     display: inline-block;
-    font-family: 'Helvetica75', 'monterastat', 'sans-serif';
+    font-family: 'Helvetica75', 'Montserrat', 'sans-serif';
     margin: 30px auto 0 auto;
     color: #fff;
     font-weight: 900;
@@ -370,7 +370,7 @@ p {
 }
 
 .greeting {
-    font-family: 'Helvetica75';
+    font-family: 'Helvetica75', 'Montserrat', 'sans-serif';
     margin: auto;
     font-weight: bold;
     color: #000000;
@@ -378,7 +378,7 @@ p {
 }
 
 .greeting-mobile {
-    font-family: 'Helvetica75';
+    font-family: 'Helvetica75', 'Montserrat', 'sans-serif';
     margin: auto;
     font-weight: bold;
     color: #000000;
@@ -387,7 +387,7 @@ p {
 @media (max-width: 359px) {
 .greeting-mobile {
     padding: 2px 0;
-    font-family: 'Helvetica75';
+    font-family: 'Helvetica75', 'Montserrat', 'sans-serif';
     margin: auto;
     font-weight: bold;
     color: #000000;
@@ -408,9 +408,8 @@ h2 {
     line-height: 1.5
 }
 
-a.nav-link {
+.nav-link {
     font-family: 'Helvetica75', 'Montserrat-bold', sans-serif;
-    ;
     font-weight: bold;
     color: #ffffff;
     font-size: 1.4rem;
