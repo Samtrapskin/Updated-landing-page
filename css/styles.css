@@ -348,7 +348,7 @@ p {
 
 #myName{
     display: inline-block;
-    font-family: 'Helvetica75', 'Montserrat', 'sans-serif';
+    font-family: 'Helvetica75', 'Arial', 'sans-serif';
     color: #fff;
     font-weight: 900;
    font-size: 68px; 
