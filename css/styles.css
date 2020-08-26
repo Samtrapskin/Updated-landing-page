@@ -19,6 +19,7 @@ body {
 #nav-container {
     display:flex;
     justify-content: flex-end;
+    margin-right: 0px;
 }
 
 light .navbar-nav .active>.nav-link {
@@ -987,7 +988,7 @@ hr {
 
 @media (min-width: 768px) {
     #myName {
-        font-size: 120px;
+        font-size: 80px;
     }
     /* #color-triangle{
     border-left: 29px solid #050404;
