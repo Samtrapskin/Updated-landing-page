@@ -30,53 +30,20 @@ body {
     max-width: 258px;
     max-height: 179px;
     border-radius: 5%;
-    -webkit-animation: fade-in 4s ease;
 }
-
+.fade-in{
+    -webkit-animation: fade-in 4s ease;
 -moz-animation: fade-in ease-in-out 4s both;
 -ms-animation: fade-in ease-in-out 4s both;
 -o-animation: fade-in ease-in-out 4s both;
 animation: fade-in 4s ease;
-
-@-webkit-keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+visibility: visible;
 }
 
-@-moz-keyframes fade-in {
-    0% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 1
-    }
-}
-
-@-o-keyframes fade-in {
-    0% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 1
-    }
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 1
-    }
-}
+@-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
+@-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
 
 #shapes-container {
     height: 50px;
