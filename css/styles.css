@@ -346,6 +346,86 @@ p {
     }
 }
 
+section:after {
+   
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 80%;
+  
+}
+
+.scroll-down {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height:30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.arrow {
+ border: solid #ffffff;
+border-width: 0 3px 3px 0;
+display: inline-block;
+padding: 3px;
+}
+
+.arrow-link {
+    position: absolute;
+    bottom: 30px;
+    width:100%
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+
+#about-padding {
+    margin-bottom: 75px;
+}
+
+#about-link {
+    width: 100%;
+      height: 50px;
+      margin-top: 245px;
+}
+  #portfolio-link {
+      width: 100%;
+      height: 50px;
+      margin-top: 215px;
+  }
+
+  #home a span {
+   
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+
+  #about a span {
+   
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
 
 h2 {
     font-family: 'Helvetica75', 'Montserrat-bold', sans-serif;
@@ -471,16 +551,17 @@ h2 {
 .pop {
     color: white;
     background-color: #e5629f;
-    padding: 10px;
+    padding: 9px 5px 5px 5px;
     margin: 5px;
+    border-radius: 3%;
 }
-
 .pop-blue {
     color: white;
-    background-color: #1b57fc;
-    padding: 10px;
-    padding-right: 14px;
+    background-color: #1b57fc;    
+    padding: 9px 5px 5px 5px;
     margin: 5px;
+    border-radius: 3%;
+
 }
 
 .fa-linkedin {
@@ -492,6 +573,7 @@ h2 {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #fff;
+    height: 100%;
 }
 
 #about h3 {
@@ -768,15 +850,21 @@ hr {
     background-color: #ffffff;
     width: 100%;
 }
+
+
     @media (max-width: 768px) {
     #name-gif {
         margin-top: 78px;
+        
     }
 }
 
 @media (min-width: 768px) {
     #myName {
         font-size: 80px;
+    }
+    .pop-blue, .pop{
+        padding: 10px;
     }
 }
 
