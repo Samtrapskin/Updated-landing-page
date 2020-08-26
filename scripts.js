@@ -1,7 +1,7 @@
 
 function readyNow() {
 
-    var gifs=['css/images/bob.gif','css/images/stanley.gif','css/images/truffle.gif','css/images/hotdawg.gif'];
+    var gifs=['css/images/bob.gif','css/images/stanley.gif','css/images/truffle.gif','css/images/hotdawg.gif', 'css/images/marty.gif','css/images/marty.gif'];
     $('<img src="gifs/' + gifs[Math.floor(Math.random() * gifs.length)] + '">').appendTo('#banner-load');
     // image[0] = "css/images/bob.gif";
     // image[1] = "css/images/stanley.gif";
