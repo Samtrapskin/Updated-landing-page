@@ -857,7 +857,7 @@ hr {
 .pop, .pop-blue {
     display: inline-flex;
 }
-
+}
 @media (min-width: 1024px) {
     #name-gif {
         margin-top: 75px;
