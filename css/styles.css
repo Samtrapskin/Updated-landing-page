@@ -61,7 +61,6 @@ max-width: 636px;
     #name-gif {
     text-align: center;
     height: 100%;
-    margin-top: 75px;
     }
 
     #myName {
@@ -350,7 +349,6 @@ p {
 #myName{
     display: inline-block;
     font-family: 'Helvetica75', 'Montserrat', 'sans-serif';
-    margin: 65px auto 0 auto;
     color: #fff;
     font-weight: 900;
    font-size: 68px; 
@@ -965,7 +963,7 @@ hr {
   #greeting-container {
     text-align: center;
     background-color: #ffffff;
-   padding: 30px 0;
+
         text-align: center;
         background-color: #ffffff;
         position: absolute;
@@ -982,22 +980,27 @@ hr {
     margin:50px 0;
   }
 } */
+@media (max-width: 768px) {
+#name-gif{
+    margin-top: 75px;
+}
+}
+
 @media (min-width: 768px) {
     #myName {
         font-size: 120px;
     }
-    #color-triangle{
+    /* #color-triangle{
     border-left: 29px solid #050404;
     border-right: 31px solid #050404;
     border-bottom: 58px solid transparent;
-    }
-    .color-circle span{
+    } */
+    /* .color-circle span{
     width: 60px;
     height: 60px;
-    }
+    } */
 }
 
-    margin-top: 75px;
   @media (min-width: 992px) {
   
     #greeting-container {
@@ -1005,6 +1008,7 @@ hr {
         background-color: #ffffff;
         text-align: center;
         width: 100%;
+        padding: 30px 0;
     }
     #greeting-name, #greeting-title {
         padding:0;
@@ -1021,6 +1025,10 @@ hr {
     #banner-load {
         display: inherit;
     }
+
+    #name-gif{
+        margin-top: 75px;
+    }
     #color-triangle{
         border-left: 19px solid #050404;
         border-right: 19px solid #050404;
@@ -1036,9 +1044,5 @@ hr {
 
 
 
-    #flex-container{
-        flex-wrap: wrap;
-        justify-content: flex-end;
-    }
 
 
