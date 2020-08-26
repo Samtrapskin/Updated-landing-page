@@ -6,17 +6,10 @@
   <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1">
 
   <title>Sam A. Trapskin</title>
-  <link type="text/css" href="css/styles.css" rel="stylesheet">
-  <script src="scripts.js" charset="utf-8"></script>
   <!--===============================================================
                GOOGLE FONTS
   ===================================================================-->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,900|Ubuntu" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto:900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Pontano+Sans" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -38,9 +31,12 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+
 </head>
 
 <body>
+
+
 
 
   <!--===============================================================
@@ -90,15 +86,12 @@
             <span class="triangle" id="color-triangle"></span>
             <span class="pacman"></span>
           </div>
-          <!-- <div class="color-square">
-            <span class="triangle"></span>
-          </div>
-          <div class="color-triangle"> -->
+        
             
           </div>
         
         
-        
+
           <div class="col-lg-4 col-md-12 gif-container" id="banner-load"></div>
         
       </div>
@@ -121,10 +114,7 @@
 
     <div id="about-link">
     <a class="scroll-down" data-event-type="helper" href="#about"><span></span></a> 
-  </div>
-  <div id="portfolio-link">
-    <a class="scroll-down" data-event-type="helper" href="#portfolio"><span></span></a> 
-  </div>
+
   
 
 
@@ -209,7 +199,7 @@
             <img class="card-img-top" src="css/images/reve.png" alt="Card image cap">
             <div class="portfolio-card-body">
               <h5 class="card-title">Reve Academy</h5>
-              <p class="technologies-used"> An app allowing student and teacher interaction along with class resources.
+              <p class="technologies-used">
                 My group project from Prime Academy built in React.</p>
               <hr>
               <div class="technologies-used">
@@ -235,33 +225,6 @@
       </div>
     </div>
 
-
-
-    <!--- <div class="row project-tile-row">
-        <div class="col-3 col-xs-6">
-            <img class="img-responsive project-tile" src="images/victory-frontpage.png" alt="Avatar">
-  <div class="project-text-block">
-            <div class="project-text">This was a project blah blah blah</div>
-          </div>
-        </div>
-        <div class="col-3 col-xs-6">
-            <img class="img-responsive project-tile" src="images/PMD.png" alt="Avatar">
-  <div class="project-text-block">
-            <div class="project-text">This was a project blah blah blah</div>
-          </div>
-        </div>
-
-        <div class="col-3 col-xs-6">
-            <img class="img-responsive project-tile" src="images/victory-frontpage.png" alt="Avatar">
-  <div class="project-text-block">
-            <div class="project-text">This was a project blah blah blah</div>
-          </div>
-        </div>
-
-      </div> -->
-
-
-    <!-- END Container -->
   </section>
   <!-- END PORTFOLIO ITEMS -->
 
@@ -287,12 +250,10 @@
     </div>
   </section>
 
-
-  <script>
-    var gifs = ['bob.gif', 'stanley.gif', 'truffle.gif', 'hotdawg.gif'];
+  <script>  var gifs=['bob.gif','stanley.gif','cam.gif','truffle.gif','hotdawg.gif','marty.gif'];
     $('<img class="gif-build" src="css/images/gifs/' + gifs[Math.floor(Math.random() * gifs.length)] + '">').appendTo(
-      '#banner-load');
-  </script>
+      '#banner-load');</script>
+
 </body>
 
 </html>

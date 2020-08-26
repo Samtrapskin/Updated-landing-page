@@ -22,13 +22,13 @@ body {
 }
 
 
-.gif-container {
-    display: none;
+#banner-load {
+display: none;
+justify-content: flex-end;
+margin: auto;
 }
 
 .gif-build {
-    max-width: 258px;
-    max-height: 179px;
     border-radius: 5%;
 }
 .fade-in{
@@ -276,20 +276,13 @@ p {
     padding: 0;
 }
 
-.hi {
-    font-family: 'Helvetica75';
-    margin: 30px auto 0 43px;
-    color: #fff;
-    font-weight: 900;
-    font-size: 1.2rem;
-}
+
 
 #myName {
     display: inline-block;
-    font-family: 'Helvetica75', 'Arial', 'sans-serif';
+    font-family: 'Libre Franklin', sans-serif;
     color: #fff;
-    font-weight: 900;
-    font-size: 68px;
+    font-weight: 700;
 }
 
 #myName-container {
@@ -317,33 +310,9 @@ p {
 
 #greeting-name,
 #greeting-title {
-    font-family: 'Helvetica75', 'Montserrat', 'sans-serif';
-    font-weight: bold;
+   font-family: 'Libre Franklin', sans-serif;
+    font-weight: 700;
     font-size: 28px;
-}
-
-.greeting-mobile {
-    font-family: 'Helvetica75', 'Montserrat', 'sans-serif';
-    margin: auto;
-    font-weight: bold;
-    color: #000000;
-}
-
-@media (max-width: 359px) {
-    .greeting-mobile {
-        padding: 2px 0;
-        font-family: 'Helvetica75', 'Montserrat', 'sans-serif';
-        margin: auto;
-        font-weight: bold;
-        color: #000000;
-        font-size: 21px;
-    }
-}
-
-@media (min-width: 360px) {
-    .greeting-mobile {
-        font-size: 23px;
-    }
 }
 
 
@@ -418,31 +387,21 @@ padding: 3px;
     box-sizing: border-box;
   }
 
-h2 {
-    font-family: 'Helvetica75', 'Montserrat-bold', sans-serif;
-    font-size: 3rem;
-    line-height: 1.5
-}
+
 
 .nav-link {
-    font-family: 'Helvetica75', 'Montserrat-bold', sans-serif;
-    font-weight: bold;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 700;
     color: #ffffff;
     font-size: 1.4rem;
 }
 
-#contact {
-    font-family: 'Helvetica75', 'Montserrat-bold', sans-serif;
 
-    font-weight: bold;
-    color: #000000;
-    font-size: 1.4rem;
-}
 
 .bio {
     font-size: 16px;
-    color: #5e5e5e;
-    font-family: 'Helvetica', 'Verdana', 'Montserrat-bold', sans-serif;
+    color: #010302;
+    font-family: 'Libre Franklin', sans-serif;
     font-weight: 300;
 }
 
@@ -532,22 +491,18 @@ h2 {
 
 }
 
-.navbar-brand {
-    font-family: 'helvetica','arial','sans-serif';
-    font-size: 2.5rem;
-    font-weight: bold;
-}
+
 
 
 .pop {
-    color: ffffff;
+    color: #ffffff;
     background-color: #e5629f;
     padding: 9px 5px 5px 5px;
     margin: 5px;
     border-radius: 3%;
 }
 .pop-blue {
-    color: ffffff;
+    color: #ffffff;
     background-color: #1b57fc;    
     padding: 9px 5px 5px 5px;
     margin: 5px;
@@ -662,17 +617,6 @@ h2 {
     }
 }
 
-#portfolio-header {
-    font-family: 'Helvetica75';
-    margin: auto;
-    font-weight: bold;
-    color: #ffffff;
-    font-size: 1.7em;
-    justify-content: center;
-    display: flex;
-
-    margin: 12px auto;
-}
 
 .portfolio-container {
     display: flex;
@@ -714,7 +658,8 @@ h2 {
 
 #project-header h3 {
     margin: 50px 0;
-    font-family: 'Helvetica', 'Verdana', 'Montserrat-bold', sans-serif;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight:500;
     color: #fff;
     text-align: center;
 }
@@ -729,26 +674,26 @@ h2 {
 }
 
 .card-title {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight:700;
     text-align: center;
-}
-
-.port-card-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    margin: 12px 10px 0 10px;
-    text-transform: uppercase;
-}
-
-.portfolio-card-text {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
     color: #000000;
 }
 
+
+
+
 .portfolio-card-body {
-    height: 165px;
+    height: auto;
+    padding: 18px 0 25px 0;
 }
 
+.portfolio-card-body p{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 100;   
+    font-size: 14px;
+    color: #000000;
+}
 a.port-card-anchor,
 a.card-title,
 a.technologies-used:link {
@@ -807,16 +752,21 @@ hr {
     margin: 200px 0;
 }
 
-#contact-header {
-    margin: 200px 0;
-    font-family: 'Helvetica', 'Verdana', 'Montserrat-bold', sans-serif;
-    color: #fff;
+#contact-header h3 {
+    color: #ffffff;
     text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 500;
+
 }
 
 #email {
+    font-family: 'Libre Franklin', sans-serif;
     color: #ffffff;
+    font-weight:500;
     text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
 }
 
 #email a {
@@ -840,7 +790,15 @@ hr {
 }
 
 
+@media (max-width: 433px) {
+    .pop-blue, .pop { 
+        padding: 3px 5px 1px 5px;
+    }
+}
 
+@media (max-width: 477px) {
+
+}
 
 @media (max-width: 767px) {
     #portfolio-link  {
@@ -866,10 +824,11 @@ hr {
 
 @media (min-width: 992px) {
 
-    .gif-container {
-        display: inherit;
-        margin: auto;
+    #banner-load {
+        display: flex;
     }
+
+   
 
     #greeting-container {
         text-align: center;
@@ -894,9 +853,12 @@ hr {
     }
 }
 
+@media (max-width: 991px) {
+.pop, .pop-blue {
+    display: inline-flex;
+}
+
 @media (min-width: 1024px) {
-
-
     #name-gif {
         margin-top: 75px;
     }
