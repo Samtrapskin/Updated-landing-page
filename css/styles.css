@@ -28,18 +28,10 @@ justify-content: flex-end;
 /* margin: auto; */
 }
 
-.gif-container {
-    max-width: 300px;
+.gif-container, .gif-build {
+    display: none;
 }
 
-.gif-build {
-    position: absolute;
-    z-index: 99;
-    bottom: 146px;
-    right: 172px;
-    max-height: 100%;
-    max-width: 42%;
-}
 .fade-in{
     -webkit-animation: fade-in 4s ease;
 -moz-animation: fade-in ease-in-out 4s both;
@@ -870,6 +862,23 @@ hr {
 @media (min-width: 1024px) {
     #name-gif {
         margin-top: 75px;
+    }
+    .gif-container {
+        display: inline;
+        max-width: 300px;
+        position: absolute;
+        top: 0px;
+        right: 111px;
+    }
+    
+    .gif-build {
+        display: inline;
+        position: absolute;
+        z-index: 99;
+        bottom: 146px;
+        right: 172px;
+        max-height: 34%;
+        max-width: 50%;
     }
 
     #color-triangle {
