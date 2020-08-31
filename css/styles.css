@@ -25,11 +25,20 @@ body {
 #banner-load {
 display: none;
 justify-content: flex-end;
-margin: auto;
+/* margin: auto; */
+}
+
+.gif-container {
+    max-width: 300px;
 }
 
 .gif-build {
-    border-radius: 5%;
+    position: absolute;
+    z-index: 99;
+    bottom: 146px;
+    right: 172px;
+    max-height: 100%;
+    max-width: 42%;
 }
 .fade-in{
     -webkit-animation: fade-in 4s ease;
