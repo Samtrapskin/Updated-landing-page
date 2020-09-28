@@ -400,14 +400,16 @@ padding: 3px;
 
 
 .bio {
-    font-size: 16px;
-    color: #010302;
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 300;
+    margin: auto;
+  
 }
 
 .bio p {
     margin: 25px 0;
+    font-size: 16px;
+    color: #010302;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
 }
 
 .bio h3 {
