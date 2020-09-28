@@ -701,8 +701,10 @@ a.technologies-used:link {
     text-decoration: none;
     color: #000000;
 }
-
-
+a.port-card-anchor:hover {
+    text-decoration: none;
+    color: #000000;
+}
 hr {
     width: 75%;
     margin: 10px;
@@ -711,6 +713,9 @@ hr {
 .technologies-used {
     margin: 0px 10px 0 10px;
     font-size: 10px;
+}
+.technologies-used:hover {
+    text-decoration: none;
 }
 
 .project-tile-row {
