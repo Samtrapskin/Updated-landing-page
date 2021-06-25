@@ -53,12 +53,8 @@ visibility: visible;
 }
 
 .color-circle {
-    position: relative;
-    transform: translateY(100%);
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 0 56px 0px;
+padding-top: 5px;
+
 }
 
 .color-circle span {
@@ -72,8 +68,8 @@ visibility: visible;
 #color-triangle {
     animation-delay: 0.5s;
     margin: 0 12px;
-    border-left: 20px solid #050404;
-    border-right: 20px solid #050404;
+    border-left: 20px solid #ffffff;
+    border-right: 20px solid #ffffff;
     border-bottom: 32px solid transparent;
 }
 
@@ -281,20 +277,22 @@ p {
 
 #myName {
     display: inline-block;
-    font-family: 'Libre Franklin', sans-serif;
-    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
     font-weight: 700;
+    font-size: 80px;
 }
 
 #myName-container {
-    text-align: center;
+    text-align: left;
 }
 
-@media (min-width: 1024px) {
-    #myName {
-        font-size: 120px;
-    }
+#myName > span {
+    transform: rotate(-90deg);
 }
+
+
+
 
 .gif {
 
@@ -311,9 +309,9 @@ p {
 
 #greeting-name,
 #greeting-title {
-   font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 23px;
 }
 
 
@@ -510,7 +508,13 @@ padding: 3px;
     padding: 9px 5px 5px 5px;
     margin: 5px;
     border-radius: 3%;
-
+}
+.pop-green {
+    color: #ffffff;
+    background-color: #1b6535;    
+    padding: 9px 5px 5px 5px;
+    margin: 5px;
+    border-radius: 3%;
 }
 
 .fa-linkedin {
@@ -797,16 +801,17 @@ hr {
     width: 100%;
 }
 
-
+@media (max-width: 400px) {
+    #greeting-name, #greeting-title{
+        font-size: 16px;
+    }
+}
 @media (max-width: 433px) {
-    .pop-blue, .pop { 
+    .pop-blue, .pop, .pop-green { 
         padding: 3px 5px 1px 5px;
     }
 }
 
-@media (max-width: 477px) {
-
-}
 
 @media (max-width: 767px) {
     #portfolio-link  {
@@ -822,11 +827,12 @@ hr {
 }
 
 @media (min-width: 768px) {
-    #myName {
-        font-size: 80px;
-    }
-    .pop-blue, .pop{
+
+    .pop-blue, .pop, .pop-green{
         padding: 10px;
+    }
+    .color-circle {
+        padding-top: 19px;
     }
 }
 
@@ -848,7 +854,8 @@ hr {
 
     #greeting-name,
     #greeting-title {
-        padding: 0;
+        padding-left: 50px;
+        font-size: 36px;;
 
     }
 
@@ -862,35 +869,44 @@ hr {
 }
 
 @media (max-width: 991px) {
-.pop, .pop-blue {
+.pop, .pop-blue, .pop-green {
     display: inline-flex;
 }
 }
 @media (min-width: 1024px) {
     #name-gif {
-        margin-top: 75px;
+        margin-top: 30px;
     }
-    .gif-container {
-        display: inline;
-        max-width: 300px;
-        position: absolute;
-        top: 0px;
-        right: 111px;
-    }
+  
+        .gif-container {
+            display: inline;
+            max-width: 412px;
+            position: absolute;
+            top: 7px;
+            right: -60px;
+        }
     
-    .gif-build {
-        display: inline;
-        position: absolute;
-        z-index: 99;
-        bottom: 146px;
-        right: 172px;
-        max-height: 34%;
-        max-width: 50%;
-    }
+ 
+        .gif-build {
+            display: block;
+            position: absolute;
+            z-index: 99;
+            /* margin: auto; */
+            top: 66px;
+            right: 25px;
+            /* padding-top: 10%; */
+            border-radius: 2%;
+        }
+    
+    
 
     #color-triangle {
-        border-left: 19px solid #050404;
-        border-right: 19px solid #050404;
+        border-left: 19px solid #ffffff;
+        border-right: 19px solid #ffffff;
         border-bottom: 30px solid transparent;
+    }
+    #myName {
+        font-size: 145px;
+        padding-left: 12px;
     }
 }

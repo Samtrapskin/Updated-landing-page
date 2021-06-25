@@ -7,9 +7,9 @@ body {
   }
   
   h1 {
-    font-family: 'Oleo Script';
+    font-family: 'Roboto', sans-serif;
     color: #fff;
-    text-align: center;
+   
   }
   
  
@@ -60,6 +60,9 @@ body {
   
   /* END NAV BAR */
   
+
+
+
   .down-arrow{
     display: flex;
     margin-top: 50px;
