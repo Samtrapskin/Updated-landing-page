@@ -53,17 +53,19 @@ visibility: visible;
 }
 
 .color-circle {
-padding-top: 5px;
+
+margin: auto;
 
 }
 
 .color-circle span {
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
     background: #fff;
     display: inline-block;
     opacity: 1;
 }
+
 
 #color-triangle {
     animation-delay: 0.5s;
@@ -294,13 +296,7 @@ p {
 
 
 
-.gif {
 
-    margin: 72px 0 0 60px;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-}
 
 #home {
     height: 100%;
@@ -313,37 +309,6 @@ p {
     font-weight: 700;
     font-size: 23px;
 }
-
-
-
-.scroll-down {
-    cursor: pointer;
-    position: absolute;
-    width: 100%;
-    height:30px;
-    display: flex;
-    justify-content: center;
-
-}
-
-.arrow {
- border: solid #ffffff;
-border-width: 0 3px 3px 0;
-display: inline-block;
-padding: 3px;
-}
-
-.arrow-link {
-    position: absolute;
-    bottom: 30px;
-    width:100%
-}
-
-.down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-  }
-
 
 #about-padding {
     margin-bottom: 75px;
@@ -389,7 +354,7 @@ padding: 3px;
 
 
 .nav-link {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     color: #ffffff;
     font-size: 1.4rem;
@@ -523,7 +488,7 @@ padding: 3px;
 }
 
 #about {
-    padding-top: 50px;
+    padding-top: 150px;
     padding-bottom: 150px;
     background-color: #ffffff;
    
@@ -831,9 +796,7 @@ hr {
     .pop-blue, .pop, .pop-green{
         padding: 10px;
     }
-    .color-circle {
-        padding-top: 19px;
-    }
+  
 }
 
 @media (min-width: 992px) {
@@ -880,33 +843,49 @@ hr {
   
         .gif-container {
             display: inline;
-            max-width: 412px;
+            max-width: 450px;
             position: absolute;
-            top: 7px;
-            right: -60px;
+            top: 80px;
+            left: -16px;
         }
     
  
-        .gif-build {
-            display: block;
-            position: absolute;
-            z-index: 99;
-            /* margin: auto; */
-            top: 66px;
-            right: 25px;
-            /* padding-top: 10%; */
-            border-radius: 2%;
-        }
+        
+            .gif-build {
+                display: block;
+                position: absolute;
+                z-index: 99;
+                /* margin: auto; */
+                top: 130px;
+                height: 200px;
+                height: 179px;
+                border: 10px solid black;
+                right: 43px;
+                /* padding-top: 10%; */
+                border-radius: 2%;
+            }
     
     
 
-    #color-triangle {
-        border-left: 19px solid #ffffff;
-        border-right: 19px solid #ffffff;
-        border-bottom: 30px solid transparent;
-    }
+ 
+        #color-triangle {
+            border-left: 50px solid #000000;
+            border-right: 50px solid #000000;
+            border-bottom: 98px solid transparent;
+        }
+    
     #myName {
         font-size: 145px;
         padding-left: 12px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gif-container {
+        display: inline;
+        max-width: 450px;
+        position: absolute;
+        top: 80px;
+        left: 60px;
     }
 }
