@@ -4,11 +4,13 @@ body {
 
 html {
     scroll-behavior: smooth;
+    
 }
 
 html,
 body {
     height: 100%;
+    overflow-x: hidden;
 }
 
 #home {
@@ -70,9 +72,9 @@ margin: auto;
 #color-triangle {
     animation-delay: 0.5s;
     margin: 0 12px;
-    border-left: 20px solid #ffffff;
-    border-right: 20px solid #ffffff;
-    border-bottom: 32px solid transparent;
+    border-left: 50px solid #000000;
+    border-right: 50px solid #000000;
+    border-bottom: 98px solid transparent;
 }
 
 .color-square span {
@@ -275,7 +277,9 @@ p {
     padding: 0;
 }
 
-
+#name-gif {
+    padding-top: 50px;
+}
 
 #myName {
     display: inline-block;
@@ -362,7 +366,7 @@ p {
 
 
 
-.bio {
+.bio{
     margin: auto;
   
 }
@@ -371,7 +375,7 @@ p {
     margin: 25px 0;
     font-size: 16px;
     color: #010302;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Montserrat', sans-serif;;
     font-weight: 400;
 }
 
@@ -487,6 +491,10 @@ p {
     margin-bottom: 20px
 }
 
+.computer_image {
+    display: flex;
+}
+
 #about {
     padding-top: 150px;
     padding-bottom: 150px;
@@ -495,7 +503,11 @@ p {
 }
 
 #about h3 {
-    text-align: center;
+    color:#ff5851;
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
 }
 
 .about-1 {
@@ -630,10 +642,10 @@ p {
 
 #project-header h3 {
     margin: 50px 0;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight:500;
     color: #fff;
-    text-align: center;
+    text-align:start;
 }
 
 .port-card:hover {
@@ -646,7 +658,7 @@ p {
 }
 
 .card-title {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight:700;
     text-align: center;
     color: #000000;
@@ -732,13 +744,13 @@ hr {
 #contact-header h3 {
     color: #ffffff;
     text-align: center;
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 
 }
 
 #email {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     font-weight:500;
     text-align: center;
@@ -840,39 +852,43 @@ hr {
     #name-gif {
         margin-top: 30px;
     }
-  
-        .gif-container {
-            display: inline;
-            max-width: 450px;
-            position: absolute;
-            top: 80px;
-            left: -16px;
-        }
-    
- 
-        
-            .gif-build {
+
+    .color-circle {
+        text-align: center;
+    }
+
+    .color-circle span{
+        width: 50px;
+        height: 50px;
+    }
+
+    #color-triangle {
+    border-left: 25px solid #000000;
+        border-right: 25px solid #000000;
+        border-bottom: 50px solid transparent;
+}
+            .gif-container {
                 display: block;
                 position: absolute;
-                z-index: 99;
-                /* margin: auto; */
-                top: 130px;
-                height: 200px;
-                height: 179px;
-                border: 10px solid black;
-                right: 43px;
-                /* padding-top: 10%; */
-                border-radius: 2%;
+                margin: auto;
+                max-width: 450px;
+                bottom: 101px;
+                left: 0px;
             }
-    
-    
 
- 
-        #color-triangle {
-            border-left: 50px solid #000000;
-            border-right: 50px solid #000000;
-            border-bottom: 98px solid transparent;
-        }
+                .gif-build {
+                    display: block;
+                    position: absolute;
+                    z-index: 99;
+                    bottom: 202px;
+                    height: 179px;
+                    border: solid black;
+                    border-width: 10px 5px;
+                    left: 82px;
+                    border-radius: 2%;
+                }
+
+    
     
     #myName {
         font-size: 145px;
@@ -880,12 +896,26 @@ hr {
     }
 }
 
+
 @media (min-width: 1200px) {
-    .gif-container {
-        display: inline;
-        max-width: 450px;
-        position: absolute;
-        top: 80px;
-        left: 60px;
-    }
-}
+     
+            .gif-container {
+                bottom: 41px;
+
+            }
+       
+                .gif-build {
+                    bottom: 143px;  
+                }
+                #color-triangle {
+                    animation-delay: 0.5s;
+                    margin: 0 12px;
+                    border-left: 50px solid #000000;
+                    border-right: 50px solid #000000;
+                    border-bottom: 98px solid transparent;
+                }
+                .color-circle span {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
