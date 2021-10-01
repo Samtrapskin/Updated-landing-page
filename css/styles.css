@@ -373,10 +373,10 @@ p {
 
 .bio p {
     margin: 25px 0;
-    font-size: 16px;
+    font-size: 18px;
     color: #010302;
     font-family: 'Montserrat', sans-serif;;
-    font-weight: 400;
+    font-weight: 900;
 }
 
 .bio h3 {
@@ -673,10 +673,11 @@ p {
 }
 
 .portfolio-card-body p{
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 100;   
     font-size: 14px;
     color: #000000;
+    font-weight: 600;
 }
 a.port-card-anchor,
 a.card-title,
