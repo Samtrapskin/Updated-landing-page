@@ -85,11 +85,11 @@
     <div class="container-fluid" id="name-gif">
       <div class="row">
 
-        <div class="col-lg-8 col-md-12" id="myName-container">
+        <div class="col-md-6" id="myName-container">
           <h1 id="myName">Samuel<br>Trapskin</h1>
         </div>
 
-        <div class="col-xs-2 col-md-4 color-circle">
+        <div class="col-xs-2 col-md-6 color-circle">
           <span class="blue"></span>
           <span class="triangle" id="color-triangle"></span>
           <span class="pacman"></span>
@@ -126,14 +126,11 @@
   <!-- End SHAPES and GIF-->
 
   <section id="about">
-    <div class="container" id="about-padding">
+    <div class="container-fluid" id="about-padding">
       <div class="row">
-        <!-- <div class="col-1 bio"></div> -->
-        <div class="col-xs-12 col-md-7 bio">
-          <!-- <div class="col-lg-4 col-md-12 computer_image"><img class="gif-container" src="/css/images/macbook-icon.png">
-            <div class="gif-build"></div>
-          </div> -->
-          <h3>Who I Am</h3>
+        <div class="col-xs-1 col-md-2 col-lg-1 d-xl-none bio"></div>
+        <div class="col-xs-4 col-md-8 col-lg-5 col-xl-6 bio">
+          <h3>Who ?</h3>
           <p>My name is Sam. &nbsp;&nbsp; I'm a Web Developer and Designer based in the Twin Cities in Minnesota.
             &nbsp;&nbsp;A few years go I was
             inspired to change careers with a goal of discovering new and challenging opportunities within Software
@@ -154,9 +151,12 @@
               work!</p>
           </div>
         </div>
-          <div class="col-lg-5 col-md-12 computer_image">
+        <div class="d-none d-lg-block col-lg-5 col-xl-5" id="gif-wrapper">
+         
             <img class="gif-container" src="/css/images/macbook-icon.png">
-          </div>
+ 
+        </div>
+        <div class="col-md-2 d-lg-block d-xl-none bio"></div>
           </div>
      </div>
   </section>
@@ -166,10 +166,10 @@
         PORTFOLIO SECTION
     ************************** -->
   <section id="portfolio">
-    <div id="project-header">
-      <h3>My Projects</h3>
-    </div>
     <div class="container" id="portfolio-container">
+    <div id="project-header">
+      <h3>Some projects</h3>
+    </div>
       <div id="main">
         <div class="port-card">
           <a class="port-card-anchor" href="">
@@ -258,7 +258,7 @@
   <script>
     var gifs = ['bob1.gif', 'stanley.gif', 'daniel_son.gif', 'cam.gif', 'truffle.gif', 'marty.gif'];
     $('<img class="gif-build" src="css/images/gifs/' + gifs[Math.floor(Math.random() * gifs.length)] + '">').appendTo(
-      '.computer_image');
+      '#gif-wrapper');
   </script>
 
 </body>
