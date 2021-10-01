@@ -371,7 +371,7 @@ p {
   
 }
 
-.bio p {
+.bio p,.bio span a {
     margin: 25px 0;
     font-size: 18px;
     color: #010302;
@@ -379,9 +379,17 @@ p {
     font-weight: 900;
 }
 
+.bio img {
+    height: 57px;
+    width: 125px;
+}
+
+
 .bio h3 {
     color: #000000;
 }
+
+
 
 .navigate {
     float: right;
