@@ -4,7 +4,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-    
+
 }
 
 html,
@@ -13,9 +13,20 @@ body {
     overflow-x: hidden;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
 #home {
     height: 100%;
 }
+
+/* 
+***************************************************************
+======================= NAVBAR STYLE ==========================
+***************************************************************
+*/
 
 #nav-container {
     display: flex;
@@ -25,28 +36,204 @@ body {
 
 
 #banner-load {
-display: none;
-justify-content: flex-end;
-/* margin: auto; */
+    display: none;
+    justify-content: flex-end;
+    /* margin: auto; */
 }
 
-.gif-container, .gif-build {
+#about-padding {
+    margin-bottom: 75px;
+}
+
+#about-link {
+    width: 100%;
+    height: 50px;
+    margin-top: 175px;
+}
+
+#portfolio-link {
+    width: 100%;
+    height: 50px;
+    margin-top: 215px;
+}
+
+#home a span {
+
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+#about a span {
+
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+.navigate {
+    float: right;
+    margin-right: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #e5629f;
+}
+
+.nav-item active {
+    color: blue;
+}
+
+.nav-item:after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #1b57fc;
+    transition: 0.6s;
+}
+
+.nav-item:hover:after {
+    width: 100%;
+    color: #e5629f;
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .active>.nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.navbar-nav .show>.nav-link,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav {
+    color: #1b57fc !important;
+}
+
+.nav-link {
+    padding: 15px 5px;
+    transition: 0.2s;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #212529;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background: hotpink;
+}
+
+.navbar {
+    position: absolute;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        position: inherit;
+    }
+
+    .nav-item {
+        display: inline;
+    }
+
+}
+
+/* 
+***************************************************************
+======================= END NAVBAR STYLE ==================
+***************************************************************
+*/
+
+.gif-container,
+.gif-build {
     display: none;
 }
 
-.fade-in{
+/* 
+***************************************************************
+======================= SHAPES STYLE ==================
+***************************************************************
+*/
+.fade-in {
     -webkit-animation: fade-in 4s ease;
--moz-animation: fade-in ease-in-out 4s both;
--ms-animation: fade-in ease-in-out 4s both;
--o-animation: fade-in ease-in-out 4s both;
-animation: fade-in 4s ease;
-visibility: visible;
+    -moz-animation: fade-in ease-in-out 4s both;
+    -ms-animation: fade-in ease-in-out 4s both;
+    -o-animation: fade-in ease-in-out 4s both;
+    animation: fade-in 4s ease;
+    visibility: visible;
 }
 
-@-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
-@-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
-@-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
-@keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
 
 #shapes-container {
     height: 50px;
@@ -56,7 +243,7 @@ visibility: visible;
 
 .color-circle {
 
-margin: auto;
+    margin: auto;
 
 }
 
@@ -80,7 +267,6 @@ margin: auto;
 .color-square span {
     width: 30px;
     height: 30px;
-    /* background: #fff; */
     display: inline-block;
     /* border-radius: 50%; */
     opacity: 1;
@@ -252,8 +438,6 @@ margin: auto;
 
 }
 
-
-
 .red {
     -webkit-animation: fade 4s 1s infinite linear alternate,
         rotate 4s 1s infinite linear alternate;
@@ -272,10 +456,41 @@ margin: auto;
     animation: color-green 4s 1s infinite linear alternate;
 }
 
-p {
-    margin: 0;
-    padding: 0;
+.pop {
+    color: #ffffff;
+    background-color: #e5629f;
+    padding: 9px 5px 5px 5px;
+    margin: 5px;
+    border-radius: 3%;
 }
+
+.pop-blue {
+    color: #ffffff;
+    background-color: #1b57fc;
+    padding: 9px 5px 5px 5px;
+    margin: 5px;
+    border-radius: 3%;
+}
+
+.pop-green {
+    color: #ffffff;
+    background-color: #1b6535;
+    padding: 9px 5px 5px 5px;
+    margin: 5px;
+    border-radius: 3%;
+}
+
+/* 
+***************************************************************
+========================== END SHAPES STYLE ===================
+***************************************************************
+*/
+
+/*    
+****************************************************************
+=========================== NAME HERO STYLE ===================
+***************************************************************
+*/
 
 #name-gif {
     padding-top: 50px;
@@ -293,18 +508,21 @@ p {
     text-align: left;
 }
 
-#myName > span {
+#myName>span {
     transform: rotate(-90deg);
 }
-
-
-
-
-
 
 #home {
     height: 100%;
     margin-bottom: 50px;
+}
+
+#greeting-container {
+    text-align: center;
+    background-color: #ffffff;
+    text-align: center;
+    background-color: #ffffff;
+    width: 100%;
 }
 
 #greeting-name,
@@ -314,68 +532,31 @@ p {
     font-size: 23px;
 }
 
-#about-padding {
-    margin-bottom: 75px;
-}
-
-#about-link {
-    width: 100%;
-      height: 50px;
-      margin-top: 175px;
-}
-  #portfolio-link {
-      width: 100%;
-      height: 50px;
-      margin-top: 215px;
-  }
-
-  #home a span {
-   
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    border-left: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    box-sizing: border-box;
-  }
-
-  #about a span {
-   
-    left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
-    border-left: 1px solid #000000;
-    border-bottom: 1px solid #000000;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    box-sizing: border-box;
-  }
+/*    
+***************************************************************
+========================= END NAME HERO STYLE =================
+***************************************************************
+*/
 
 
+/*    
+****************************************************************
+========================= ABOUT ME STYLE ======================
+****************************************************************
+*/
 
-.nav-link {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: #ffffff;
-    font-size: 1.4rem;
-}
-
-
-
-.bio{
+.bio {
     margin: auto;
-  
+
 }
 
-.bio p,.bio span a {
+.bio p,
+.bio span a {
     margin: 25px 0;
     font-size: 18px;
     color: #010302;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    ;
     font-weight: 900;
 }
 
@@ -389,116 +570,6 @@ p {
     color: #000000;
 }
 
-
-
-.navigate {
-    float: right;
-    margin-right: 50px;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #e5629f;
-}
-
-.nav-item active {
-    color: blue;
-}
-
-.nav-item:after {
-    content: '';
-    display: block;
-    width: 0px;
-    height: 2px;
-    background: #1b57fc;
-    transition: 0.6s;
-}
-
-.nav-item:hover:after {
-    width: 100%;
-    color: #e5629f;
-
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-}
-
-.navbar-nav .active>.nav-link,
-.navbar-nav .nav-link.active,
-.navbar-nav .nav-link.show,
-.navbar-nav .show>.nav-link,
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link:focus,
-.navbar-nav {
-    color: #1b57fc !important;
-}
-
-.nav-link {
-    padding: 15px 5px;
-    transition: 0.2s;
-}
-
-.dropdown-item.active,
-.dropdown-item:active {
-    color: #212529;
-}
-
-.dropdown-item:focus,
-.dropdown-item:hover {
-    background: hotpink;
-}
-
-.navbar {
-    position: absolute;
-    justify-content: flex-end;
-}
-
-.nav-item {
-    display: flex;
-    justify-content: flex-end;
-}
-
-@media screen and (min-width: 992px) {
-    .navbar {
-        position: inherit;
-    }
-
-    .nav-item {
-        display: inline;
-    }
-
-}
-
-
-
-
-.pop {
-    color: #ffffff;
-    background-color: #e5629f;
-    padding: 9px 5px 5px 5px;
-    margin: 5px;
-    border-radius: 3%;
-}
-.pop-blue {
-    color: #ffffff;
-    background-color: #1b57fc;    
-    padding: 9px 5px 5px 5px;
-    margin: 5px;
-    border-radius: 3%;
-}
-.pop-green {
-    color: #ffffff;
-    background-color: #1b6535;    
-    padding: 9px 5px 5px 5px;
-    margin: 5px;
-    border-radius: 3%;
-}
-
-.fa-linkedin {
-    size: 5x;
-    margin-bottom: 20px
-}
-
 .computer_image {
     display: flex;
 }
@@ -507,11 +578,11 @@ p {
     padding-top: 150px;
     padding-bottom: 150px;
     background-color: #ffffff;
-   
+
 }
 
 #about h3 {
-    color:#ff5851;
+    color: #ff5851;
     text-align: start;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
@@ -531,84 +602,17 @@ p {
     margin-bottom: 50px;
 }
 
+/*    
+****************************************************************
+==================== END ABOUT ME STYLE ========================
+****************************************************************
+*/
 
-.bluestem {
-    height: 125px;
-    width: 300px;
-}
-
-.fht {
-    height: 200px;
-    width: 200px;
-}
-
-#home-footer,
-#home-footer-mobile {
-    background-color: #ffffff;
-    text-align: center;
-    display: block;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-}
-
-#features {
-    background-color: #fff;
-    position: relative;
-}
-
-#main-image {
-    width: 60%;
-    transform: rotate(25deg);
-    position: absolute;
-    right: 30%;
-}
-
-#title {
-    background-color: #050404;
-    color: rgb(255, 255, 255);
-    text-align: left;
-}
-
-@media (max-width: 1028px) {
-
-    #title {
-        text-align: center;
-    }
-
-    #main-image {
-        position: static;
-        transform: rotate(0);
-
-    }
-}
-
-@media (max-width: 991px) {
-
-    .gif {
-        margin: 30px 0 0 0;
-    }
-
-    .white-space {
-        padding: 15px 0;
-    }
-
-    .loader {
-        height: 21px;
-    }
-
-    .tri-loader {
-        height: 22px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .wrapper-home-footer-mobile {
-        display: none;
-    }
-}
-
+/* 
+***********************************************************************
+ ======================== PORTFOLIO STYLE =============================
+***********************************************************************
+*/
 
 .portfolio-container {
     display: flex;
@@ -618,16 +622,24 @@ p {
 }
 
 /* 
- *************************************************
-            PORTFOLIO CARDS 
- ************************************************
+ *********************************************************************
+  ======================== PORTFOLIO CARDS ===========================
+ **********************************************************************
  */
+
 #main {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
+}
+
+#main-image {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
 }
 
 .port-card {
@@ -651,9 +663,9 @@ p {
 #project-header h3 {
     margin: 50px 0;
     font-family: 'Roboto', sans-serif;
-    font-weight:500;
+    font-weight: 500;
     color: #fff;
-    text-align:start;
+    text-align: start;
 }
 
 .port-card:hover {
@@ -667,36 +679,36 @@ p {
 
 .card-title {
     font-family: 'Montserrat', sans-serif;
-    font-weight:700;
+    font-weight: 700;
     text-align: center;
     color: #000000;
 }
-
-
-
 
 .portfolio-card-body {
     height: auto;
     padding: 18px 0 25px 0;
 }
 
-.portfolio-card-body p{
+.portfolio-card-body p {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100;   
+    font-weight: 100;
     font-size: 14px;
     color: #000000;
     font-weight: 600;
 }
+
 a.port-card-anchor,
 a.card-title,
 a.technologies-used:link {
     text-decoration: none;
     color: #000000;
 }
+
 a.port-card-anchor:hover {
     text-decoration: none;
     color: #000000;
 }
+
 hr {
     width: 75%;
     margin: 10px;
@@ -706,45 +718,46 @@ hr {
     margin: 0px 10px 0 10px;
     font-size: 10px;
 }
+
 .technologies-used:hover {
     text-decoration: none;
 }
 
-.project-tile-row {
-    justify-content: center;
-}
+/* 
+ ******************************************************************
+  =====================  END PORTFOLIO CARDS ======================
+ ******************************************************************
+ */
+/* 
+********************************************************************
+========================= END PORTFOLIO   STYLE ====================
+********************************************************************
+*/
 
-.project-tile {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
 
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
 
-.project-tile:hover {
-    opacity: 0.3;
-}
+/*    
+********************************************************************
+======================== FOOTER  STYLE =============================
+********************************************************************
+*/
 
-.project-tile-text-block:hover {
-    opacity: 1;
-}
-
-.text {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-}
+    #home-footer,
+    #home-footer-mobile {
+        background-color: #ffffff;
+        text-align: center;
+        display: block;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+    }
+    
+    @media (min-width: 1024px) {
+        .wrapper-home-footer-mobile {
+            display: none;
+        }
+    }
 
 #contact {
     margin: 200px 0;
@@ -761,7 +774,7 @@ hr {
 #email {
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    font-weight:500;
+    font-weight: 500;
     text-align: center;
     font-size: 22px;
     letter-spacing: 2px;
@@ -775,58 +788,63 @@ hr {
     color: hotpink;
 }
 
+.fa-linkedin {
+    size: 5x;
+    margin-bottom: 20px
+}
+
 #linkedin-logo {
     text-align: center;
 }
-
-#greeting-container {
-    text-align: center;
-    background-color: #ffffff;
-    text-align: center;
-    background-color: #ffffff;
-    width: 100%;
-}
+/*    
+********************************************************************
+====================== END FOOTER  STYLE ===========================
+********************************************************************
+/* 
+********************************************************************
+ ==================== MEDIA QUERY STYLING ==========================
+********************************************************************
+*/
 
 @media (max-width: 400px) {
-    #greeting-name, #greeting-title{
+    #greeting-name,
+    #greeting-title {
         font-size: 16px;
     }
 }
+
 @media (max-width: 433px) {
-    .pop-blue, .pop, .pop-green { 
+    .pop-blue,
+    .pop,
+    .pop-green {
         padding: 3px 5px 1px 5px;
     }
 }
 
-
 @media (max-width: 767px) {
-    #portfolio-link  {
+    #portfolio-link {
         margin-top: 145px;
-        
     }
 }
-    @media (max-width: 768px) {
+
+@media (max-width: 768px) {
     #name-gif {
         margin-top: 78px;
-        
     }
 }
 
 @media (min-width: 768px) {
-
-    .pop-blue, .pop, .pop-green{
+    .pop-blue,
+    .pop,
+    .pop-green {
         padding: 10px;
     }
-  
 }
 
 @media (min-width: 992px) {
-
     #banner-load {
         display: flex;
     }
-
-   
 
     #greeting-container {
         text-align: center;
@@ -839,8 +857,7 @@ hr {
     #greeting-name,
     #greeting-title {
         padding-left: 50px;
-        font-size: 36px;;
-
+        font-size: 36px;
     }
 
     #greeting-name p {
@@ -853,10 +870,13 @@ hr {
 }
 
 @media (max-width: 991px) {
-.pop, .pop-blue, .pop-green {
-    display: inline-flex;
+    .pop,
+    .pop-blue,
+    .pop-green {
+        display: inline-flex;
+    }
 }
-}
+
 @media (min-width: 1024px) {
     #name-gif {
         margin-top: 30px;
@@ -866,65 +886,75 @@ hr {
         text-align: center;
     }
 
-    .color-circle span{
+    .color-circle span {
         width: 50px;
         height: 50px;
     }
 
     #color-triangle {
-    border-left: 25px solid #000000;
+        border-left: 25px solid #000000;
         border-right: 25px solid #000000;
         border-bottom: 50px solid transparent;
-}
-            .gif-container {
-                display: block;
-                position: absolute;
-                margin: auto;
-                max-width: 450px;
-                bottom: 101px;
-                left: 0px;
-            }
+    }
 
-                .gif-build {
-                    display: block;
-                    position: absolute;
-                    z-index: 99;
-                    bottom: 202px;
-                    height: 179px;
-                    border: solid black;
-                    border-width: 10px 5px;
-                    left: 82px;
-                    border-radius: 2%;
-                }
+    .gif-container {
+        display: block;
+        position: absolute;
+        margin: auto;
+        max-width: 450px;
+        bottom: 101px;
+        left: 0px;
+    }
 
-    
-    
+    .gif-build {
+        display: block;
+        position: absolute;
+        z-index: 99;
+        bottom: 202px;
+        height: 179px;
+        border: solid black;
+        border-width: 10px 5px;
+        left: 82px;
+        border-radius: 2%;
+    }
+
     #myName {
         font-size: 145px;
         padding-left: 12px;
     }
 }
 
-
 @media (min-width: 1200px) {
-     
-            .gif-container {
-                bottom: 41px;
+    .gif-container {
+        bottom: 41px;
+    }
 
-            }
-       
-                .gif-build {
-                    bottom: 143px;  
-                }
-                #color-triangle {
-                    animation-delay: 0.5s;
-                    margin: 0 12px;
-                    border-left: 50px solid #000000;
-                    border-right: 50px solid #000000;
-                    border-bottom: 98px solid transparent;
-                }
-                .color-circle span {
-                    width: 100px;
-                    height: 100px;
-                }
-            }
+    .gif-build {
+        bottom: 143px;
+    }
+
+    #color-triangle {
+        animation-delay: 0.5s;
+        margin: 0 12px;
+        border-left: 50px solid #000000;
+        border-right: 50px solid #000000;
+        border-bottom: 98px solid transparent;
+    }
+
+    .color-circle span {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* 
+ *************************************************
+            END MEDIA QUERY STYLING
+ ************************************************
+ */
+
+ /* 
+ **************************************************************************************************
+  =====================================   END STYLE.CSS  ==========================================
+ **************************************************************************************************
+ */
