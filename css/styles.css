@@ -722,7 +722,19 @@ hr {
 .technologies-used:hover {
     text-decoration: none;
 }
+#list-app-img {
+    max-width: 50%;
+display: block;
+margin: auto;
+}
 
+#list-app-body {
+ padding:0;
+}
+.btn-primary {
+    display: block;
+    margin: 7px auto;
+}
 /* 
  ******************************************************************
   =====================  END PORTFOLIO CARDS ======================
@@ -742,22 +754,22 @@ hr {
 ********************************************************************
 */
 
-    #home-footer,
-    #home-footer-mobile {
-        background-color: #ffffff;
-        text-align: center;
-        display: block;
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        bottom: 0;
+#home-footer,
+#home-footer-mobile {
+    background-color: #ffffff;
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+@media (min-width: 1024px) {
+    .wrapper-home-footer-mobile {
+        display: none;
     }
-    
-    @media (min-width: 1024px) {
-        .wrapper-home-footer-mobile {
-            display: none;
-        }
-    }
+}
 
 #contact {
     margin: 200px 0;
@@ -796,6 +808,7 @@ hr {
 #linkedin-logo {
     text-align: center;
 }
+
 /*    
 ********************************************************************
 ====================== END FOOTER  STYLE ===========================
@@ -807,6 +820,7 @@ hr {
 */
 
 @media (max-width: 400px) {
+
     #greeting-name,
     #greeting-title {
         font-size: 16px;
@@ -814,6 +828,7 @@ hr {
 }
 
 @media (max-width: 433px) {
+
     .pop-blue,
     .pop,
     .pop-green {
@@ -834,6 +849,7 @@ hr {
 }
 
 @media (min-width: 768px) {
+
     .pop-blue,
     .pop,
     .pop-green {
@@ -870,6 +886,7 @@ hr {
 }
 
 @media (max-width: 991px) {
+
     .pop,
     .pop-blue,
     .pop-green {
@@ -926,11 +943,11 @@ hr {
 
 @media (min-width: 1200px) {
     .gif-container {
-        bottom: 41px;
+        bottom: 142px;
     }
 
     .gif-build {
-        bottom: 143px;
+        bottom: 244px;
     }
 
     #color-triangle {
@@ -953,7 +970,7 @@ hr {
  ************************************************
  */
 
- /* 
+/* 
  **************************************************************************************************
   =====================================   END STYLE.CSS  ==========================================
  **************************************************************************************************
