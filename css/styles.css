@@ -150,7 +150,6 @@ p {
 }
 
 .navbar {
-    position: absolute;
     justify-content: flex-end;
 }
 
