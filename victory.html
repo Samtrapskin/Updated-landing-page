@@ -11,15 +11,21 @@
 
 
   <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+  </script>
 
   <!-- FONT AWESOME -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
   <link rel="stylesheet" href="/css/victory.css">
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -37,34 +43,50 @@
 <body>
 
 
-
-
-<body>
-  <!-- 
-        ****************
-            NAV BAR
-        ****************-->
-
-
-  <div class="container-md" id="nav-wrapper">
-
-    <div class="pg-nav-container">
+  <!--===============================================================
+  *** NAVBAR ***
+  ===================================================================-->
+  <section id="home">
+    <div class="container" id="nav-container">
       <div class="logo"><a class="navbar-brand" href="#">
-          <img src="/css/images/victory/shield2.png" width="100" height="90" alt="">
+        <img src="/css/images/victory/shield2.png" width="100" height="90" alt="">
 
-        </a>
-      </div>
-      <div class="navi-item"><a href="">Shop</a></div>
-      <div class="navi-item"><a href="">Bikes</a></div>
-      <div class="navi-item"><a href="">Repairs</a></div>
-      <div class="navi-item"><a href="">Classes</a></div>
-      <div class="navi-item"><a href="">Location</a></div>
-
+      </a>
+    </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent static-top">
+        <button class="navbar-toggler navbar-light bg-secondary" type="button" data-toggle="collapse"
+          data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="">Shop<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Bikes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Repairs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Classes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Location</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
 
-  </div>
-    <!--
-        ****************
+    <!-- End NAVBAR -->
+
+<body>
+
+<!-- 
+          ****************
            END NAV BAR
         ****************-->
     <section class="home" id="home">

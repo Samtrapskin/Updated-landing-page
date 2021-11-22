@@ -58,6 +58,31 @@ body {
     color: #ffffff;
   }
   
+  #nav-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0px;
+  }
+  .nav-bar{
+    justify-content: flex-end !important;
+  }
+
+  .nav-item {
+      display: flex;
+      justify-content: flex-end;
+  }
+
+@media screen and (min-width: 992px) {
+  .navbar {
+      position: inherit;
+  }
+
+  .nav-item {
+      display: inline;
+  }
+
+}
+  
   /* END NAV BAR */
   
 
