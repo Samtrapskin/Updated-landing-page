@@ -158,6 +158,11 @@ body {
 .row{
     display: inline-flex;
 }
+#logo-txt-main {
+    max-width:85%;
+    margin: 2% auto;
+    text-align: center;
+}
 
 #logo-main {
 background-color: #ffffff;
@@ -184,15 +189,34 @@ border-left: transparent;
 border-bottom: transparent;
 }
 
+
 .carousel-caption {
+    position: absolute;
     right: 0%;
-    text-align:left;
-    background-color: black;
-    max-width: 300px;
+    top: 0px;
+    bottom: 0px;
     left: auto;
-    padding:5px;
-    top: 20px;
+    z-index: 10;
+    background-color: black;
+    padding-top: 48px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    width:50%;
 }
 
+#main-bike-img img{
+    margin: auto;
+    display: block;
+}
 
-
+@media (max-width: 768px){
+.d-md-block {
+    display: block!important;
+}
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #main-bike-img img{
+       width: 100%;
+    }
+}
