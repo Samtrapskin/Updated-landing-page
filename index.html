@@ -139,8 +139,9 @@
             A few years go I was
             inspired to change careers with a goal of discovering new and challenging opportunities within Software and
             Web
-            Development. I've gained experience in a lot of great opportunities. I currently work as a Web Designer at St. Catherine University.
-       
+            Development. I've gained experience in a lot of great opportunities. I currently work as a Web Designer at
+            St. Catherine University.
+
           </p>
           <p>Throughout my life, I've valued my curiosity with technology and have always loved learning new skills. I'm
             in the process of
@@ -176,215 +177,305 @@
   <section id="portfolio">
     <div class="container" id="portfolio-container">
       <div class="row">
-      <div class="col-12" id="project-header">
-        <h3>Some projects</h3>
+        <div class="col-12" id="project-header">
+          <h3>Some projects</h3>
+        </div>
       </div>
-    </div>
-    <div class="row" id="main">
-      <div class="col-xs-12 col-md-3">
-      <div class="port-card">
-        <a class="port-card-anchor">
-          <img class="card-img-top" src="css/images/Artboard.png" id="list-app-img" alt="Card image cap">
-          <div class="portfolio-card-body" id="list-app-body">
-            <div class="card-title">List app prototype</div>
-            <p>Protoype assignment from UX Design class.</p>
-            <hr>
-            <div class="technologies-used">
-              <p>Technologies used:<br />Adobe XD</p>
-            </div>
+      <div class="row portfolio-rows">
+        <div class="col-xs-12 col-md-3">
+          <div class="port-card">
+            <a class="port-card-anchor">
+              <img class="card-img-top" src="css/images/xd-nurse-screen.png" id="portfolio-img-one" alt="Card image cap">
+              <div class="portfolio-card-body" id="list-app-body">
+                <div class="card-title">School of Nursing page</div>
+                <p>Initial wireframes</p>
+                <hr>
+                <div class="technologies-used">
+                  <p>Technologies used:<br />Adobe XD</p>
+                </div>
 
+              </div>
+            </a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nursingWireModal"
+              >
+              View wireframes
+            </button>
           </div>
-        </a>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#prototypeModal" style="margin-top: 53px;">
-          View prototype
-        </button>
-      </div>
-    </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="nursingWireModal" tabindex="-1" aria-labelledby="#nursingWireModal"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
 
-      <!-- Modal -->
-      <div class="modal fade" id="prototypeModal" tabindex="-1" aria-labelledby="prototypeModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="/css/images/xd-nurse-screen.png" class="img-fluid">
+              </div>
+              <div class="modal-footer">
+                <a href="/css/files/Nursing_page-5-17.xd">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Download wireframes</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+  <!-- end card 1 -->
 
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="col-xs-12 col-md-3">
+          <div class="port-card">
+            <a class="port-card-anchor">
+              <img class="card-img-top" src="css/images/Artboard.png" id="portfolio-img-two" alt="Card image cap">
+              <div class="portfolio-card-body" id="">
+                <div class="card-title">prototype</div>
+                <p>A prototype project for a list app (UX Design Course)</p>
+                <hr>
+                <div class="technologies-used">
+                  <p>Technologies used:<br />Adobe XD</p>
+                </div>
+
+              </div>
+            </a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#prototypeModal">
+              View wireframe
+            </button>
+          </div>
+
+
+
+          <div class="modal fade" id="prototypeModal" tabindex="0" aria-labelledby="prototypeModal"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="css/images/Artboard.png" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                  <a href="/css/files/list_prototype.xd">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Download wireframes</button>
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="modal-body">
-              <img src="/css/images/Artboard.png" class="img-fluid">
-            </div>
-            <div class="modal-footer">
-              <a href="/css/files/list_prototype.xd">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">download prototype</button>
+          </div>
+        </div>
+     <!-- End card two-->
+
+          <div class="col-xs-12 col-md-3">
+            <div class="port-card">
+              <a class="port-card-anchor">
+                <img class="card-img-top" id="portfolio-img-three" src="css/images/journey_flow.png" alt="Card image cap">
+                <div class="portfolio-card-body">
+                  <div class="card-title">Journey flow</div>
+                  <p>Journey flow assignment from UX Design class.</p>
+                  <hr>
+                  <div class="technologies-used">
+                    <p>Technologies used:<br />Adobe XD</p>
+                  </div>
+      
+                </div>
               </a>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#journeyModal" >
+                View journey flow
+              </button>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- End Modal -->
-      <div class="col-xs-12 col-md-3">
-      <div class="port-card">
-        <a class="port-card-anchor">
-          <img class="card-img-top" src="css/images/journey_flow.png" alt="Card image cap">
-          <div class="portfolio-card-body">
-            <div class="card-title">Journey flow</div>
-            <p>Journey flow assignment from UX Design class.</p>
-            <hr>
-            <div class="technologies-used">
-              <p>Technologies used:<br />Adobe XD</p>
+      
+            <div class="modal fade" id="journeyModal" tabindex="-1" aria-labelledby="journeyModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+      
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="/css/images/journey_flow.png" class="img-fluid">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <a href="/css/files/journeyflow1.2.xd">
+                      <button type="button" class="btn btn-primary">download prototype</button>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
-          </div>
-        </a>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#journeyModal" >
-          View journey flow
-        </button>
-      </div>
-    </div>
 
-      <!-- Modal -->
-      <div class="modal fade" id="journeyModal" tabindex="-1" aria-labelledby="journeyModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <img src="/css/images/journey_flow.png" class="img-fluid">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <a href="/css/files/journeyflow1.2.xd">
-                <button type="button" class="btn btn-primary">download prototype</button>
+          <div class="col-xs-12 col-md-3">
+            <div class="port-card">
+              <a class="port-card-anchor" href="/logo.html" target="_blank">
+                <img class="card-img-top" id="portfolio-img-four" src="css/images/logo/Bike-updated-cmyk_FIII.png"
+                  alt="Card image cap">
+                <div class="portfolio-card-body">
+                  <div class="card-title">Logo creation</h5>
+                    <p>My first attempt at creating a logo from scratch.</p>
+                    <hr>
+                    <div class="technologies-used">
+                      <p>Technologies used:<br />Adobe illustrator</p>
+                    </div>
+                  </div>
               </a>
+              <button type="button" class="btn btn-primary">
+                <a href="/logo.html" target="_blank">See more</a>
+             </button>
             </div>
+          </div><!-- end card 4-->
+        </div> <!-- end row -->
+           
+
+          
+      
+      <div class="row portfolio-rows">
+        <div class="col-xs-12 col-md-3">
+          <div class="port-card">
+            <a class="port-card-anchor" href="victory.html" target="_blank">
+              <img class="card-img-top" src="css/images/victory-frontpage.png" alt="Card image cap">
+              <div class="portfolio-card-body">
+                <div class="card-title">Victory Bicycle Co.</div>
+                <p class="card-about"> A fictional website for a bicycle company</p>
+                <hr>
+                <div class="technologies-used">
+                  <p>Technologies used:<br />HTML, CSS, Bootstrap, jQuery, PHP and SQL.</p>
+                </div>
+              </div>
+            </a>
+            <button type="button" class="btn btn-primary">
+              <a href="/victory.html" target="_blank">See page</a>
+           </button>
           </div>
         </div>
+
+        <div class="col-xs-12 col-md-3">
+          <div class="port-card"]>
+            <a class="port-card-anchor" href="tindog.html">
+              <img class="card-img-top" id="dogapp" src="css/images/tindog-2.png" alt="Card image cap">
+              <div class="portfolio-card-body">
+                <div class="card-title">Tindog</div>
+                <p> A responsive landing page for a fictional app.</p>
+                <hr>
+                <div class="technologies-used">
+                  <p>Technologies used:<br />HTML, CSS, Bootstrap, jQuery.</p>
+                </div>
+              </div>
+            </a>
+            <button type="button" class="btn btn-primary">
+              <a href="/tindog.html" target="_blank">See page</a>
+           </button>
+          </div>
+        </div>
+      
+  
+          <div class="col-xs-12 col-md-3">
+          <div class="port-card">
+            <a class="port-card-anchor" href="">
+              <img class="card-img-top" src="css/images/reve.png" alt="Card image cap">
+              <div class="portfolio-card-body port-no-img">
+                <div class="card-title">Reve Academy</div>
+                <p>
+                  My group project from Prime Academy built in React.</p>
+                <hr>
+                <div class="technologies-used">
+                  <p>Technologies used:<br /> React, NodeJS, Bootstrap, HTML, CSS and SQL.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-md-3">
+          <div class="port-card">
+            <a class="port-card-anchor" href="">
+              <img class="card-img-top" src="css/images/expensur.png" alt="Card image cap">
+              <div class="portfolio-card-body port-img-eight">
+                <div class="card-title">Expensur</div>
+                <p> An expense tracker. My final project from Prime Academy built in React.</p>
+                <hr>
+                <div class="technologies-used">
+                  <p>Technologies used:<br> React, NodeJS, Bootstrap, HTML, CSS and SQL.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+
+
+
+
+
       </div>
 
-      <div class="col-xs-12 col-md-3">
-        <div class="port-card" style="padding-bottom: 18px;">
-          <a class="port-card-anchor" href="/logo.html" target="_blank">
-            <img class="card-img-top" id="bike-logo-folio" src="css/images/logo/Bike-updated-cmyk_FIII.png" alt="Card image cap">
-            <div class="portfolio-card-body">
-              <div class="card-title">Logo creation</h5>
-              <p>My first attempt at creating a loogo from scratch.  &nbsp;An assignment from a Continuing education course in Graphic Design from MCAD (Minneapoils College of Art and Design.</p>
-              <hr>
-            </div>
-          </a>
-        </div>
-      </div>
-      <!-- Modal -->
+
+    
+       
+
+    </div> 
+  </section>
+   <!-- endcontainer -->
+ 
+   <!-- 
+   
+     
       <div class="col-xs-hidden col-md-3"></div>
         <div class="col-xs-hidden col-md-3"></div>
 
 
         
         </div>
-      <div class="row" id="main">
-        <div class="col-xs-12 col-md-3">
-        <div class="port-card">
-          <a class="port-card-anchor" href="">
-            <img class="card-img-top" src="css/images/expensur.png" alt="Card image cap">
-            <div class="portfolio-card-body">
-              <div class="card-title">Expensur</div>
-              <p> An expense tracker. My final project from Prime Academy built in React.</p>
-              <hr>
-              <div class="technologies-used">
-                <p>Technologies used:<br /> React, NodeJS, Bootstrap, HTML, CSS and SQL.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-md-3">
-        <div class="port-card" style="padding-bottom: 18px;">
-          <a class="port-card-anchor" href="victory.html" target="_blank">
-            <img class="card-img-top" src="css/images/victory-frontpage.png" alt="Card image cap">
-            <div class="portfolio-card-body">
-              <div class="card-title">Victory Bicycle Co.</div>
-              <p class="card-about"> A fictional website for a bicycle company</p>
-              <hr>
-              <div class="technologies-used">
-                <p>Technologies used:<br />HTML, CSS, Bootstrap, jQuery, PHP and SQL.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-        <div class="col-xs-12 col-md-3">
-        <div class="port-card">
-          <a class="port-card-anchor" href="">
-            <img class="card-img-top" src="css/images/reve.png" alt="Card image cap">
-            <div class="portfolio-card-body">
-              <div class="card-title">Reve Academy</div>
-              <p>
-                My group project from Prime Academy built in React.</p>
-              <hr>
-              <div class="technologies-used">
-                <p>Technologies used:<br /> React, NodeJS, Bootstrap, HTML, CSS and SQL.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
+      
+     
     
 
   
- <div class="col-xs-12 col-md-3">
-        <div class="port-card" style="padding-bottom: 18px;">
-          <a class="port-card-anchor" href="tindog.html">
-            <img class="card-img-top" id="dogapp" src="css/images/tindog-2.png" alt="Card image cap">
-            <div class="portfolio-card-body">
-              <div class="card-title">Tindog</div>
-              <p> A responsive landing page for a fictional app.</p>
-              <hr>
-              <div class="technologies-used">
-                <p>Technologies used:<br />HTML, CSS, Bootstrap, jQuery.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
+
 
 
  </div>
 
-  </section>
-  <!-- END PORTFOLIO ITEMS -->
+   -->
+          <!-- END PORTFOLIO ITEMS -->
 
-  <section id="contact">
-    <div id="contact-header">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h3>Feel free to contact me at the following</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <p id="email"><a href="mailto:samtrapskin@gmail.com">samtrapskin@gmail.com</a></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col" id="linkedin-logo">
-            <a href="https://www.linkedin.com/in/samuel-trapskin-24557171/"><i class="fab fa-linkedin fa-2x"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+          <section id="contact">
+            <div id="contact-header">
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <h3>Feel free to contact me at the following</h3>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <p id="email"><a href="mailto:samtrapskin@gmail.com">samtrapskin@gmail.com</a></p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" id="linkedin-logo">
+                    <a href="https://www.linkedin.com/in/samuel-trapskin-24557171/"><i
+                        class="fab fa-linkedin fa-2x"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-  <script>
-    var gifs = ['bob1.gif', 'stanley.gif', 'daniel_son.gif', 'cam.gif', 'truffle.gif', 'marty.gif'];
-    $('<img class="gif-build" src="css/images/gifs/' + gifs[Math.floor(Math.random() * gifs.length)] + '">').appendTo(
-      '#gif-wrapper');
-  </script>
+          <script>
+            var gifs = ['bob1.gif', 'stanley.gif', 'daniel_son.gif', 'cam.gif', 'truffle.gif', 'marty.gif'];
+            $('<img class="gif-build" src="css/images/gifs/' + gifs[Math.floor(Math.random() * gifs.length)] + '">')
+              .appendTo(
+                '#gif-wrapper');
+          </script>
 
 </body>
 
 </html>
+

@@ -626,7 +626,7 @@ p {
  **********************************************************************
  */
 
-#main {
+.portfolio-rows{
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -642,7 +642,6 @@ p {
 }
 
 .port-card {
-    max-width: 200px;
     margin: 13px auto;
     background-color: #ffffff;
     background-clip: border-box;
@@ -651,9 +650,12 @@ p {
 }
 
 #dogapp {
-    width: 96%;
-    padding-left: 5px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding-top: 5%;
 }
+
 
 #portfolio {
     margin: 150px 0;
@@ -683,9 +685,12 @@ p {
     color: #000000;
 }
 
-.portfolio-card-body {
-    height: auto;
-    padding: 18px 0 25px 0;
+.port-no-img{
+    padding: 11% 0;
+}
+
+.port-img-eight{
+    padding: 7%;
 }
 
 .portfolio-card-body p {
@@ -724,12 +729,43 @@ hr {
 }
 
 #bike-logo-folio {
-    padding:10px;
+    padding: 10px 10px 0 10px;
+    max-width: 80%;
+    margin: auto;
+    display: block;
 }
+#portfolio-img-one {
+max-width:70%;
+margin:auto;
+display: flex;
+padding-bottom: 5%;
+}
+
+#portfolio-img-two {
+    max-width:66%;
+    margin:auto;
+    display: flex;
+    padding-bottom: 5%;
+}
+#portfolio-img-three {
+    max-width:58%;
+    margin:auto;
+    display: flex;
+    padding-bottom: 5%;
+}
+
+#portfolio-img-four {
+    max-width:93%;
+    margin:auto;
+    display: flex;
+    padding-bottom: 5%;
+}
+
+
 #list-app-img {
     max-width: 50%;
 display: block;
-margin: auto;
+margin: auto auto 5% auto;
 }
 
 #list-app-body {
