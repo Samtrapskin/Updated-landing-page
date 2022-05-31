@@ -35,7 +35,7 @@ body {
     height: 100vh;
   }
   #home{
-    padding-top:50px;
+    padding-top: 2%;
   }
   .main section.home,
   .main section.about,
@@ -75,7 +75,6 @@ body {
   #nav-container{
     display: flex;
     justify-content: flex-end;
-    margin-right: 0px;
   }
   .navbar,.navbar-nav{
     justify-content: flex-end !important;
@@ -93,7 +92,7 @@ body {
     font-family: sans-serif;
     font-weight: 700;
     color: #ffffff;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 /* .navbar-light .navbar-nav .nav-link {
   color: #e5629f;
@@ -146,23 +145,41 @@ body {
   }
   
   .headline {
-    margin: 35px 0;
-    font-size: 50px;
+    margin: 1% 0;
+    font-family: 'Roboto', arial, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+  }
+
+  .sub-headline {
+    margin: 1% auto;
+    font-family: 'Roboto', arial, sans-serif;
+    font-size: 25px;
     text-align: center;
     color: #ffffff;
   }
-  
-  .about,
+  #about-container{
+    padding: 0;
+  }
+  .about{
+    background-color:#ffffff;
+  }
   .repair {
     height: 100%;
-    margin: 75px auto 75px auto;
+    margin: 5% auto;
   }
   
-  #about-row {
-    margin-bottom: 50px;
+
+  #about-us {
+    font-family: 'Roboto', arial, sans-serif;
+    margin: auto;
+    font-size: 16px;
+    text-align: center;
+    color:#000000;
+    max-width: 60%;
   }
-  
-  #about-us,#classes,.repairs {
+ #classes,.repairs {
     margin: auto;
     color: #ffffff;
     font-size: 23px;
@@ -177,7 +194,10 @@ body {
   
   
   
-  
+  .da-button {
+    background-color: #47156b;
+    margin: 1%;
+  }
   
   #contact,
   #email,
@@ -206,7 +226,7 @@ body {
   } */
   
   @media (min-width: 576px) {
-    #about-us,#classes,.repairs {
+   #classes,.repairs {
     padding: 15px;
   }
   }
@@ -243,7 +263,8 @@ body {
   
   #repair-img,
   #class-img {
-    max-width: 50%;
+    max-width:100%;
+    margin-top: 5%;
   }
   
   /* LOCATION SECTION */
@@ -328,17 +349,17 @@ body {
   #footer {
     padding-top: 25px;
     padding-bottom: 20px;
-    background-color: #ff0000;
+    background-color: #ffffff;
   }
   
   h4 {
     text-transform: uppercase;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 12px;
   }
   
   .footer-text,.footer-text-left {
-    color: #ffffff;
+    color: #000000;
     line-height: 0.6;
   }
   
@@ -355,12 +376,20 @@ body {
     text-align: center;
     margin: 80px 0 0 0;
   }
-  
+  .lower-icons a {
+    font-size: .7rem;
+    margin:2% 0;
+    color: #47156b;
+  }
+
+  .fa-3x {
+    margin: 0 5%;
+  }
   .copyright {
     display: flex;
     justify-content: center;
     margin: 12px 0 40px 0;
-    color: #ffffff;
+    color: #000000;
   }
   
   @media (max-width: 767px) {
@@ -369,10 +398,7 @@ body {
       width: 100%;
       height: auto;
     }
-  
-    .spacer {
-      height: 275px;
-    }
+ 
   }
   
   #nav-wrapper {
@@ -390,7 +416,7 @@ body {
   
   .logo {
     margin-right: auto;
-    color: #ffffff;
+    color: #000000;
   }
   
   .navi-item {
