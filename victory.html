@@ -8,7 +8,9 @@
   <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=El+Messiri|Oleo+Script|Yellowtail" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
 
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -95,7 +97,7 @@
               HERO
           *****************-->
 
-      <div class="container-md">
+      <div class="container-fluid">
         <div class="jumbotron text-center">
           <h1>Victory Bicycle</h1>
         </div>
@@ -107,7 +109,7 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img class="carousel-img mobile-version d-block w-50" src="/css/images/victory/black-bike.jpg" alt="feature bike"
+              <img class="carousel-img mobile-version d-block w-50" src="/css/images/victory/hero-bike.png" alt="feature bike"
                 alt="...">
             </div>
             <div class="carousel-item">
@@ -136,33 +138,26 @@
         </div>
     </section>
 
-    <div class="spacer"></div>
 
     <!-- ABOUT US SECTION -->
 
     <section class="about" id="about">
 
-      <div class="container-md">
+      <div class="container-fluid" id="about-container">
         <div class="row">
           <div class="col headline">
-            Our Story
+            Welcome to Victory bicycle
           </div>
         </div>
         <!--end row -->
         <div class="row" id="about-row">
-          <div class="col-lg-1 d-none d-lg-block"></div>
-          <div class="col-md-12 col-xl-5">
-            <img class="d-block w-50" src="/css/images/victory/1960-bicycles.jpg" alt="vintage-bicycle customer photo">
-          </div>
-          <div class="col-xs-10 col-sm-6 col-md-6 col-xl-4" id="about-us">
+      
+          <div class="col-12" id="about-us">
             Victory has been the
             longest running neighborhood bike shop in
-            Minneapolis.<br>
-            <br>Family owned, we've been keeping people riding and informed since 1956! <br>
-            <br>Yes we sell super awesome bicycles, but we also provide classes and have <span>THE</span> best bike
-            repair
-            shop in the
-            midwest.
+            Minneapolis. Family owned, we've been keeping people riding since 1956! 
+            Yes we sell super awesome bicycles, but we also support you througought the ride. Victory is voted <span> the #1</span> bike
+            repair shop in Minnesota year after year.
           </div>
         </div>
         <!--end row -->
@@ -171,68 +166,34 @@
         <div class="row">
 
           <div class="col" id="contact">
-            Contact us anytime!
+            <button type="button" class="btn btn-primary da-button">Visit Us</button>
           </div>
         </div>
         <!--end row -->
-        <div class="row">
-          <div class="col" id="contact">
-            612-555-5555
-          </div>
-        </div>
-        <!--end row -->
-        <div class="row">
-          <div class="col" id="email">
-            Email: &nbsp;<a href="">bicycles@victorybicycles.com</a>
-          </div>
-        </div>
-        <!--end row -->
-        <div class="row">
-          <div class="col" id="social-net">
-            <i class="fab fa-facebook-square"></i>&nbsp;
-            <i class="fab fa-twitter"></i>&nbsp;
-            <i class="fab fa-linkedin"></i>
-          </div>
-        </div>
-        <!--end row -->
+    
       </div>
       <!--end container -->
-      <div class="down-arrow">
-        <a href="#repair"> <i class="fas fa-chevron-down"></i></a>
-       </div>
     </section>
     <!--end about section -->
-
-
-    <div class="spacer"></div>
 
     <section class="repair" id="repair">
       <div class="container-md">
 
         <div class="row">
-          <div class="col headline">
+          <div class="sub-headline">
             Repairs
           </div>
         </div>
         <!--end row -->
 
         <div class="row">
-          <div class="col-lg-1 d-none d-lg-block"></div>
-          <div class="col-md-12 col-xl-5">
-            <img id="repair-img" src="/css/images/victory/repair.jpg" class="d-block w-50" alt="">
+          <div class="col-6 col-xs-12">
+            <img id="repair-img" src="/css/images/victory/repair.jpg"  alt="">
           </div>
-          <div class="col-xs-10 col-sm-6 col-md-6 col-xl-4 repairs">
+          <div class="col-6 col-xs-12 repairs">
             Our Bike doctor's will get you back to riding in no time.
-            <br>
             Call today to get a quote on any repair!
-            <br>
-            Shop: 612-722-9947
-          </div>
-        </div>
-        <!--end row -->
-
-        <div class="row">
-          <div class="col" id="repair-sched">
+           <br /> Shop: 612-722-9947
             <div class="repairs">
               <a href="#" style="color: yellow;">Click here &nbsp;
               </a> to schedule your appointment!
@@ -243,15 +204,12 @@
           </div>
         </div>
         <!--end row -->
+
       </div>
       <!--end container -->
-      <div class="down-arrow">
-        <a href="#classes"> <i class="fas fa-chevron-down"></i></a>
-       </div>
     </section>
     <!--end repair section -->
 
-    <div class="spacer"></div>
 
     <section class="classes" id="classes">
       <div class="container-md">
@@ -274,13 +232,9 @@
         <!--end row -->
       </div>
       <!--end container -->
-
-      <div class="down-arrow">
-        <a href="#home"> <i class="fas fa-chevron-up">&nbsp;top</i></a>
-       </div>
+      
     </section>
     <!--end classes section -->
-    <div class="spacer"></div>
 
     <section id="footer">
       <div class="container" id="footer-container">
@@ -314,9 +268,11 @@
 
             </div>
             <div class="col-lg-4">
-              <a href="" class="lower-icons"><i class="fab fa-facebook-square fa-3x"></i></a>
+              <div class="lower-icons">
+              <a href=""><i class="fab fa-facebook-square fa-3x"></i></a>
                 <a href=""><i class="fab fa-twitter fa-3x"></i></a>
                   <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
+                </div>
             </div>
             <div class="col-lg-4">
             </div>
