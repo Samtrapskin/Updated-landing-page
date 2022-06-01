@@ -165,13 +165,12 @@ body {
   .about{
     background-color:#ffffff;
   }
-  .repair {
+  .repair,.classes {
     height: 100%;
     margin: 5% auto;
   }
-  
 
-  #about-us {
+  .about-us {
     font-family: 'Roboto', arial, sans-serif;
     margin: auto;
     font-size: 16px;
@@ -179,7 +178,7 @@ body {
     color:#000000;
     max-width: 60%;
   }
- #classes,.repairs {
+ #classes-copy,.repairs {
     margin: auto;
     color: #ffffff;
     font-size: 23px;
@@ -187,7 +186,7 @@ body {
     text-align: center;
   }
   
-  #about-us span {
+  .about-us span {
     font-style: italic;
     display: contents;
   }
@@ -199,6 +198,10 @@ body {
     margin: 1%;
   }
   
+#contact {
+  padding: 5% 0;
+}
+
   #contact,
   #email,
   #social-net {
@@ -216,17 +219,8 @@ body {
     margin: 50px;
   }
   
-  /* #classes {
-    display: flex;
-    flex-wrap: wrap;
-    color: #ffffff;
-    font-size: 23px;
-    padding: 2px 200px;
-    margin: 50px;
-  } */
-  
   @media (min-width: 576px) {
-   #classes,.repairs {
+   #classes-copy,.repairs {
     padding: 15px;
   }
   }
@@ -387,6 +381,7 @@ body {
   }
   .copyright {
     display: flex;
+    text-align: center;
     justify-content: center;
     margin: 12px 0 40px 0;
     color: #000000;
@@ -489,3 +484,22 @@ body {
     color:#ec8213;
     margin-top: 4px;
   }
+
+@media only screen and (max-width: 767px) {
+  .about-us {
+    max-width: 80%;
+  }
+  #classes-copy, .repairs{
+    padding: 5% 1%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+#contact {
+  padding: 2% 0;
+}
+
+}
+
