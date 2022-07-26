@@ -20,6 +20,7 @@ p {
 
 #home {
     height: 100%;
+    position: relative;
 }
 
 /* 
@@ -478,7 +479,13 @@ p {
     margin: 5px;
     border-radius: 3%;
 }
-
+.pop-purple {
+    color: #ffffff;
+    background-color: #4A4180;
+    padding: 11px 8px 10px 5px;
+    margin: 5px;
+    border-radius: 3%;
+}
 /* 
 ***************************************************************
 ========================== END SHAPES STYLE ===================
@@ -492,7 +499,7 @@ p {
 */
 
 #name-gif {
-    padding-top: 50px;
+    position: relative;
 }
 
 #myName {
@@ -512,7 +519,6 @@ p {
 }
 
 #home {
-    height: 100%;
     margin-bottom: 50px;
 }
 
@@ -546,6 +552,7 @@ p {
 
 .bio {
     margin: auto;
+    padding: 2% 0;
 
 }
 
@@ -574,8 +581,7 @@ p {
 }
 
 #about {
-    padding-top: 150px;
-    padding-bottom: 150px;
+  
     background-color: #ffffff;
 
 }
@@ -871,7 +877,8 @@ margin: auto auto 5% auto;
 
     .pop-blue,
     .pop,
-    .pop-green {
+    .pop-green,
+    .pop-purple {
         padding: 3px 5px 1px 5px;
     }
 }
@@ -884,7 +891,7 @@ margin: auto auto 5% auto;
 
 @media (max-width: 768px) {
     #name-gif {
-        margin-top: 78px;
+        margin-top: 50%;
     }
 }
 
@@ -892,7 +899,8 @@ margin: auto auto 5% auto;
 
     .pop-blue,
     .pop,
-    .pop-green {
+    .pop-green,
+    .pop-purple {
         padding: 10px;
     }
 }
@@ -908,6 +916,8 @@ margin: auto auto 5% auto;
         text-align: center;
         width: 100%;
         padding: 30px 0;
+        position: absolute;
+        bottom: 0;
     }
 
     #greeting-name,
@@ -929,14 +939,15 @@ margin: auto auto 5% auto;
 
     .pop,
     .pop-blue,
-    .pop-green {
+    .pop-green,
+    .pop-purple {
         display: inline-flex;
     }
 }
 
 @media (min-width: 1024px) {
     #name-gif {
-        margin-top: 30px;
+        margin-top: 10%;
     }
 
     .color-circle {
@@ -1002,6 +1013,10 @@ margin: auto auto 5% auto;
         width: 100px;
         height: 100px;
     }
+    #name-gif {
+        margin-top: 10%;
+    }
+
 }
 
 /* 
