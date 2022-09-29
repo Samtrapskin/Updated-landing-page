@@ -1,0 +1,10 @@
+#wire-container {
+    background-color: black;
+    height:600px
+}
+    
+    #color-wire img {
+    max-width: 70%;
+    margin: 5% auto;
+    display: block;
+}
