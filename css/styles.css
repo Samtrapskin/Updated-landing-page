@@ -1,0 +1,1095 @@
+body {
+    Background-color: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    height: 100%;
+    position: relative;
+}
+
+/* 
+***************************************************************
+======================= NAVBAR STYLE ==========================
+***************************************************************
+*/
+
+#nav-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0px;
+}
+
+
+#banner-load {
+    display: none;
+    justify-content: flex-end;
+    /* margin: auto; */
+}
+
+#about-padding {
+    margin-bottom: 75px;
+}
+
+#about-link {
+    width: 100%;
+    height: 50px;
+    margin-top: 175px;
+}
+
+#portfolio-link {
+    width: 100%;
+    height: 50px;
+    margin-top: 215px;
+}
+
+#home a span {
+
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+#about a span {
+
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+}
+
+
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1.4rem;
+}
+
+.navigate {
+    float: right;
+    margin-right: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #e5629f;
+}
+
+.nav-item active {
+    color: blue;
+}
+
+.nav-item:after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #1b57fc;
+    transition: 0.6s;
+}
+
+.nav-item:hover:after {
+    width: 100%;
+    color: #e5629f;
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .active>.nav-link,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.navbar-nav .show>.nav-link,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus,
+.navbar-nav {
+    color: #1b57fc !important;
+}
+
+.nav-link {
+    padding: 15px 5px;
+    transition: 0.2s;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    color: #212529;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    background: hotpink;
+}
+
+.navbar {
+    justify-content: flex-end;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        position: inherit;
+    }
+
+    .nav-item {
+        display: inline;
+    }
+
+}
+
+/* 
+***************************************************************
+======================= END NAVBAR STYLE ==================
+***************************************************************
+*/
+
+.gif-container,
+.gif-build {
+    display: none;
+}
+
+/* 
+***************************************************************
+======================= SHAPES STYLE ==================
+***************************************************************
+*/
+.fade-in {
+    -webkit-animation: fade-in 4s ease;
+    -moz-animation: fade-in ease-in-out 4s both;
+    -ms-animation: fade-in ease-in-out 4s both;
+    -o-animation: fade-in ease-in-out 4s both;
+    animation: fade-in 4s ease;
+    visibility: visible;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-o-keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+#shapes-container {
+    height: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+.color-circle {
+
+    margin: auto;
+
+}
+
+.color-circle span {
+    width: 100px;
+    height: 100px;
+    background: #fff;
+    display: inline-block;
+    opacity: 1;
+}
+
+
+#color-triangle {
+    animation-delay: 0.5s;
+    margin: 0 12px;
+    border-left: 50px solid #000000;
+    border-right: 50px solid #000000;
+    border-bottom: 98px solid transparent;
+}
+
+.color-square span {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    /* border-radius: 50%; */
+    opacity: 1;
+
+    color: #ffe837;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        /* color: yellow; */
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes color {
+    0% {
+        transition: background-color 0.2s ease;
+        background-color: #1b57fc;
+    }
+
+    25% {
+        transition: background-color 0.4s ease;
+        background-color: #ff0000;
+    }
+
+    50% {
+        transition: background-color 0.6s ease;
+        background-color: #fff;
+    }
+
+    75% {
+        transition: background-color 0.8s ease;
+        background-color: #50912B;
+    }
+
+    100% {
+        transition: background-color 1s ease;
+
+        background-color: #1b57fc;
+    }
+}
+
+@keyframes color-triangle {
+    0% {
+        transition: background-color 0.2s ease;
+        background-color: #ffe837;
+    }
+
+    25% {
+        transition: background-color 0.4s ease;
+        background-color: #ff0000;
+    }
+
+    50% {
+        transition: background-color 0.6s ease;
+        background-color: #50912B;
+    }
+
+
+    75% {
+        transition: background-color 0.8s ease;
+        background-color: #1b57fc;
+    }
+
+    100% {
+        transition: background-color 1s ease;
+        background-color: #ffe837;
+    }
+}
+
+@keyframes color-parallel {
+    0% {
+        transition: background-color 0.2s ease;
+        background-color: #ff0000;
+    }
+
+    25% {
+        transition: background-color 0.4s ease;
+        background-color: #ffe837;
+    }
+
+    50% {
+        transition: background-color 0.6s ease;
+        background-color: #50912B;
+    }
+
+    75% {
+        transition: background-color 0.8s ease;
+        background-color: #1b57fc;
+    }
+
+    100% {
+        transition: background-color 1s ease;
+        background-color: #ff0000;
+    }
+}
+
+@keyframes color-green {
+    0% {
+        transition: background-color 0.2s ease;
+        background-color: #50912B;
+    }
+
+    25% {
+        transition: background-color 0.4s ease;
+        background-color: #1b57fc;
+    }
+
+    50% {
+        transition: background-color 0.6s ease;
+        background-color: #ffe837;
+    }
+
+    50% {
+        transition: background-color 0.8s ease;
+        background-color: #ff0000;
+    }
+
+    100% {
+        transition: background-color 0.2s ease;
+        background-color: #50912B;
+    }
+
+}
+
+.blue {
+    border-radius: 50%;
+    -webkit-animation: fade .2s 1s infinite linear alternate,
+        rotate 4s 1s infinite linear alternate;
+    -moz-animation: fade 4s 1s infinite linear alternate;
+    -ms-animation: fade 4s 1s infinite linear alternate;
+    -o-animation: fade 4s 1s infinite linear alternate;
+    animation: color 4s 1s infinite linear alternate;
+}
+
+.blue::hover {
+    color: yellow;
+}
+
+.triangle {
+    -webkit-animation: fade 4s 1s infinite linear alternate,
+        rotate 4s 1s infinite linear alternate;
+    -moz-animation: fade 4s 1s infinite linear alternate;
+    -ms-animation: fade 4s 1s infinite linear alternate;
+    -o-animation: fade 4s 1s infinite linear alternate;
+    animation: color-triangle 4s 1s infinite linear alternate;
+}
+
+.pacman {
+    -webkit-animation: fade 4s 1s infinite linear alternate,
+        rotate 4s 1s infinite linear alternate;
+    -moz-animation: fade 4s 1s infinite linear alternate;
+    -ms-animation: fade 4s 1s infinite linear alternate;
+    -o-animation: fade 4s 1s infinite linear alternate;
+    animation: color-parallel 4s 1s infinite linear alternate;
+
+}
+
+.red {
+    -webkit-animation: fade 4s 1s infinite linear alternate,
+        rotate 4s 1s infinite linear alternate;
+    -moz-animation: fade 4s 1s infinite linear alternate;
+    -ms-animation: fade 4s 1s infinite linear alternate;
+    -o-animation: fade 4s 1s infinite linear alternate;
+    animation: color-red 4s 1s infinite linear alternate;
+}
+
+.green {
+    -webkit-animation: fade 4s 1s infinite linear alternate,
+        rotate 4s 1s infinite linear alternate;
+    -moz-animation: fade 4s 1s infinite linear alternate;
+    -ms-animation: fade 4s 1s infinite linear alternate;
+    -o-animation: fade 4s 1s infinite linear alternate;
+    animation: color-green 4s 1s infinite linear alternate;
+}
+
+.pop {
+    color: #26003B;
+    background-color: #e5629f;
+    padding: 9px 5px 5px 5px;
+    margin: 5px;
+    border-radius: 3%;
+}
+
+.pop-blue {
+    color: #ffffff;
+    background-color: #1b57fc;
+    padding: 9px 5px 5px 5px;
+    margin: 5px;
+    border-radius: 3%;
+}
+
+.pop-green {
+    color: #ffffff;
+    background-color: #1b6535;
+    padding: 9px 5px 5px 5px;
+    margin: 5px;
+    border-radius: 3%;
+}
+.pop-purple {
+    color: #ffffff;
+    background-color: #4A4180;
+    padding: 11px 8px 10px 5px;
+    margin: 5px;
+    border-radius: 3%;
+}
+/* 
+***************************************************************
+========================== END SHAPES STYLE ===================
+***************************************************************
+*/
+
+/*    
+****************************************************************
+=========================== NAME HERO STYLE ===================
+***************************************************************
+*/
+
+#name-gif {
+    position: relative;
+}
+
+#myName {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 80px;
+}
+
+#myName-container {
+    text-align: left;
+}
+
+#myName>span {
+    transform: rotate(-90deg);
+}
+
+#home {
+    margin-bottom: 50px;
+}
+
+#greeting-container {
+    text-align: center;
+    background-color: #ffffff;
+    text-align: center;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+#greeting-name,
+#greeting-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 23px;
+}
+
+/*    
+***************************************************************
+========================= END NAME HERO STYLE =================
+***************************************************************
+*/
+
+
+/*    
+****************************************************************
+========================= ABOUT ME STYLE ======================
+****************************************************************
+*/
+
+.bio {
+    margin: auto;
+    padding: 2% 0;
+
+}
+
+.bio p,
+.bio span a {
+    margin: 25px 0;
+    font-size: 18px;
+    color: #010302;
+    font-family: 'Montserrat', sans-serif;
+    ;
+    font-weight: 900;
+}
+
+.bio img {
+    height: 57px;
+    width: 125px;
+}
+
+
+.bio h3 {
+    color: #000000;
+}
+
+.computer_image {
+    display: flex;
+}
+
+#about {
+  
+    background-color: #ffffff;
+
+}
+
+#about h3 {
+    color: #1C1E5C;
+    text-align: start;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    max-width: 25%;
+    padding-bottom: 1%;
+    border-bottom: 10px solid #e5629f;
+    font-size: 3rem;
+}
+
+.about-1 {
+    margin: 50px 0 50px 0;
+}
+
+.about-1 p {
+    float: right;
+}
+
+.about-2 {
+    background-color: #ffffff;
+    margin-bottom: 50px;
+}
+
+/*    
+****************************************************************
+==================== END ABOUT ME STYLE ========================
+****************************************************************
+*/
+
+/* 
+***********************************************************************
+ ======================== PORTFOLIO STYLE =============================
+***********************************************************************
+*/
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px 0;
+}
+
+/* 
+ *********************************************************************
+  ======================== PORTFOLIO CARDS ===========================
+ **********************************************************************
+ */
+
+.portfolio-rows{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+#main-image {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+
+.port-card {
+    margin: 13px auto;
+    background-color: #ffffff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+}
+
+#dogapp {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    padding-top: 5%;
+}
+
+
+#portfolio {
+    margin: 150px 0;
+}
+
+#project-header h3 {
+    font-size: 3rem;
+    margin: 50px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 1%;
+    text-align: start;
+    max-width: 35%;
+    border-bottom: 10px solid #e5629f;
+}
+
+.port-card:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.port-card-img-top {
+    max-width: 100%;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #000000;
+}
+
+.port-no-img{
+    padding: 11% 0;
+}
+
+.port-img-eight{
+    padding: 7%;
+}
+
+.portfolio-card-body p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+}
+
+a.port-card-anchor,
+a.card-title,
+a.technologies-used:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+a.port-card-anchor:hover {
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+}
+
+hr {
+    width: 75%;
+    margin: 10px;
+}
+
+.technologies-used {
+    margin: 0px 10px 0 10px;
+    font-size: 10px;
+}
+
+.technologies-used:hover {
+    text-decoration: none;
+}
+
+#bike-logo-folio {
+    padding: 10px 10px 0 10px;
+    max-width: 80%;
+    margin: auto;
+    display: block;
+}
+#portfolio-img-one {
+max-width:70%;
+margin:auto;
+display: flex;
+padding-bottom: 5%;
+}
+
+#portfolio-img-two {
+    max-width:66%;
+    margin:auto;
+    display: flex;
+    padding-bottom: 5%;
+}
+#portfolio-img-three {
+    max-width:58%;
+    margin:auto;
+    display: flex;
+    padding-bottom: 5%;
+}
+
+#portfolio-img-four {
+    max-width:93%;
+    margin:auto;
+    display: flex;
+    padding-bottom: 5%;
+}
+
+
+#list-app-img {
+    max-width: 50%;
+display: block;
+margin: auto auto 5% auto;
+}
+
+#list-app-body {
+ padding:0;
+}
+.btn-primary {
+    display: block;
+    margin: 7px auto;
+}
+
+/* New portfolio code: */
+
+
+
+.container {
+    position: relative;
+ 
+  }
+  
+  .port-img, .port-img-two {
+    max-width: 100%;
+    opacity:1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .port-overlay {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  #port-wrap-one:hover .port-img {
+    opacity: 0.3;
+  }
+
+  #port-wrap-two:hover .port-img-two {
+    opacity: 0.3;
+  }
+  
+  #port-wrap-one:hover .port-overlay {
+    opacity: 1;
+  }
+
+  #port-wrap-two:hover .port-overlay {
+    opacity: 1;
+  }
+  
+  
+  .port-text {
+    background-color: #0FC2C0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 18px;
+    padding: 24px 27px;
+  }
+/* 
+ ******************************************************************
+  =====================  END PORTFOLIO CARDS ======================
+ ******************************************************************
+ */
+/* 
+********************************************************************
+========================= END PORTFOLIO   STYLE ====================
+********************************************************************
+*/
+
+
+
+/*    
+********************************************************************
+======================== FOOTER  STYLE =============================
+********************************************************************
+*/
+
+#home-footer,
+#home-footer-mobile {
+    background-color: #ffffff;
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+@media (min-width: 1024px) {
+    .wrapper-home-footer-mobile {
+        display: none;
+    }
+}
+
+#contact {
+    margin: 200px 0;
+}
+
+#contact-header h3 {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+}
+
+#email {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+#email a {
+    color: #ffffff;
+}
+
+#email a:hover {
+    color: hotpink;
+}
+
+.fa-linkedin {
+    size: 5x;
+    margin-bottom: 20px
+}
+
+#linkedin-logo {
+    text-align: center;
+}
+
+/*    
+********************************************************************
+====================== END FOOTER  STYLE ===========================
+********************************************************************
+/* 
+********************************************************************
+ ==================== MEDIA QUERY STYLING ==========================
+********************************************************************
+*/
+
+@media (max-width: 400px) {
+
+    #greeting-name,
+    #greeting-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 433px) {
+
+    .pop-blue,
+    .pop,
+    .pop-green,
+    .pop-purple {
+        padding: 3px 5px 1px 5px;
+    }
+}
+
+@media (max-width: 767px) {
+    #portfolio-link {
+        margin-top: 145px;
+    }
+}
+
+@media (max-width: 768px) {
+    #name-gif {
+        margin-top: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .pop-blue,
+    .pop,
+    .pop-green,
+    .pop-purple {
+        padding: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    #banner-load {
+        display: flex;
+    }
+
+    #greeting-container {
+        text-align: center;
+        background-color: #ffffff;
+        text-align: center;
+        width: 100%;
+        padding: 30px 0;
+        position: absolute;
+        bottom: 0;
+    }
+
+    #greeting-name,
+    #greeting-title {
+        padding-left: 50px;
+        font-size: 36px;
+    }
+
+    #greeting-name p {
+        float: right;
+    }
+
+    #greeting-title p {
+        float: left;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .pop,
+    .pop-blue,
+    .pop-green,
+    .pop-purple {
+        display: inline-flex;
+    }
+}
+
+@media (min-width: 1024px) {
+    #name-gif {
+        margin-top: 10%;
+    }
+
+    .color-circle {
+        text-align: center;
+    }
+
+    .color-circle span {
+        width: 50px;
+        height: 50px;
+    }
+
+    #color-triangle {
+        border-left: 25px solid #000000;
+        border-right: 25px solid #000000;
+        border-bottom: 50px solid transparent;
+    }
+
+    .gif-container {
+        display: block;
+        position: absolute;
+        margin: auto;
+        max-width: 450px;
+        bottom: 101px;
+        left: 0px;
+    }
+
+    .gif-build {
+        display: block;
+        position: absolute;
+        z-index: 99;
+        bottom: 202px;
+        height: 179px;
+        border: solid black;
+        border-width: 10px 5px;
+        left: 82px;
+        border-radius: 2%;
+    }
+
+    #myName {
+        font-size: 145px;
+        padding-left: 12px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .gif-container {
+        bottom: 142px;
+    }
+
+    .gif-build {
+        bottom: 244px;
+    }
+
+    #color-triangle {
+        animation-delay: 0.5s;
+        margin: 0 12px;
+        border-left: 50px solid #000000;
+        border-right: 50px solid #000000;
+        border-bottom: 98px solid transparent;
+    }
+
+    .color-circle span {
+        width: 100px;
+        height: 100px;
+    }
+    #name-gif {
+        margin-top: 10%;
+    }
+
+}
+
+/* 
+ *************************************************
+            END MEDIA QUERY STYLING
+ ************************************************
+ */
+
+/* 
+ **************************************************************************************************
+  =====================================   END STYLE.CSS  ==========================================
+ **************************************************************************************************
+ */
