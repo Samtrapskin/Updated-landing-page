@@ -1,6 +1,4 @@
-body {
-    Background-color: #000000;
-}
+
 
 html {
     scroll-behavior: smooth;
@@ -16,11 +14,6 @@ body {
 p {
     margin: 0;
     padding: 0;
-}
-
-#home {
-    height: 100%;
-    position: relative;
 }
 
 /* 
@@ -58,6 +51,8 @@ p {
     margin-top: 215px;
 }
 
+
+
 #home a span {
 
     left: 50%;
@@ -89,7 +84,7 @@ p {
 .nav-link {
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
-    color: #ffffff;
+    color: #000;
     font-size: 1.4rem;
     letter-spacing: 1.5pt;
 }
@@ -506,7 +501,7 @@ p {
 #myName {
     display: inline-block;
     font-family: 'Roboto', sans-serif;
-    color: #ffffff;
+    color: #000;
     font-weight: 700;
     font-size: 80px;
 }
@@ -519,15 +514,8 @@ p {
     transform: rotate(-90deg);
 }
 
-#home {
-    margin-bottom: 50px;
-}
-
 #greeting-container {
     text-align: center;
-    background-color: #ffffff;
-    text-align: center;
-    background-color: #ffffff;
     width: 100%;
 }
 
@@ -946,7 +934,7 @@ margin: auto auto 5% auto;
 
 @media (max-width: 768px) {
     #name-gif {
-        margin-top: 50%;
+        margin: 10% 0 10%;
     }
 }
 
@@ -967,18 +955,15 @@ margin: auto auto 5% auto;
 
     #greeting-container {
         text-align: center;
-        background-color: #ffffff;
-        text-align: center;
         width: 100%;
-        padding: 30px 0;
-        position: absolute;
-        bottom: 0;
+        padding: 60px 25px;
+     
     }
 
     #greeting-name,
     #greeting-title {
-        padding-left: 50px;
-        font-size: 36px;
+        font-size: 25px;
+        padding: 0 0.4%;
     }
 
     #greeting-name p {
@@ -1069,7 +1054,7 @@ margin: auto auto 5% auto;
         height: 100px;
     }
     #name-gif {
-        margin-top: 10%;
+        margin-top: 5%;
     }
 
 }

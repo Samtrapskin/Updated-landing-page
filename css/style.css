@@ -1,6 +1,4 @@
-body {
-    background-color: black;
-  }
+
   
   a {
     display: contents;
@@ -54,7 +52,7 @@ body {
   }
   
   .navbar-light .navbar-nav .nav-link {
-    color: #ffffff;
+    color: #000;
   }
   
   #nav-container{
