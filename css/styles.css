@@ -23,8 +23,6 @@ p {
 */
 
 
-
-
 .navbar-brand{
     font-size: 2rem;
     font-family: "IBM Plex Sans", sans-serif;
@@ -170,11 +168,11 @@ p {
 ***************************************************************
 */
 .fade-in {
-    -webkit-animation: fade-in 4s ease;
-    -moz-animation: fade-in ease-in-out 4s both;
-    -ms-animation: fade-in ease-in-out 4s both;
-    -o-animation: fade-in ease-in-out 4s both;
-    animation: fade-in 4s ease;
+    -webkit-animation: fade-in 2s ease;
+    -moz-animation: fade-in ease-in-out 2s both;
+    -ms-animation: fade-in ease-in-out 2s both;
+    -o-animation: fade-in ease-in-out 2s both;
+    animation: fade-in 2s ease;
     visibility: visible;
 }
 
@@ -481,7 +479,7 @@ p {
 ***************************************************************
 */
 
-#name-gif {
+#name-intro {
     position: relative;
 }
 
@@ -490,24 +488,29 @@ p {
     font-family: 'Roboto', sans-serif;
     color: #000;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 3vw;
 }
 
 #myName-container {
-    text-align: left;
+    text-align: center;
 }
 
-#myName>span {
+#myName-container p {
+font-size: 20px;
+font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* #myName>span {
     transform: rotate(-90deg);
-}
+} */
 
-#greeting-container {
+#roles {
     text-align: center;
     width: 100%;
 }
 
 #greeting-name,
-#greeting-title {
+#roles-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 23px;
@@ -898,7 +901,7 @@ margin: auto auto 5% auto;
 @media (max-width: 400px) {
 
     #greeting-name,
-    #greeting-title {
+    #roles-title {
         font-size: 16px;
     }
 }
@@ -920,7 +923,7 @@ margin: auto auto 5% auto;
 }
 
 @media (max-width: 768px) {
-    #name-gif {
+    #intro {
         margin: 10% 0 10%;
     }
 }
@@ -940,7 +943,7 @@ margin: auto auto 5% auto;
         display: flex;
     }
 
-    #greeting-container {
+    #roles {
         text-align: center;
         width: 100%;
         padding: 60px 25px;
@@ -948,7 +951,7 @@ margin: auto auto 5% auto;
     }
 
     #greeting-name,
-    #greeting-title {
+    #roles-title {
         font-size: 25px;
         padding: 0 0.4%;
     }
@@ -956,7 +959,7 @@ margin: auto auto 5% auto;
     #greeting-name p {
         float: right;
     }
-
+  
     #greeting-title p {
         float: left;
     }
@@ -973,7 +976,7 @@ margin: auto auto 5% auto;
 }
 
 @media (min-width: 1024px) {
-    #name-gif {
+    #intro {
         margin-top: 10%;
     }
 
@@ -1014,7 +1017,7 @@ margin: auto auto 5% auto;
     }
 
     #myName {
-        font-size: 145px;
+        /* font-size: 145px; */
         padding-left: 12px;
     }
 }
@@ -1040,7 +1043,7 @@ margin: auto auto 5% auto;
         width: 100px;
         height: 100px;
     }
-    #name-gif {
+    #intro {
         margin-top: 5%;
     }
 
