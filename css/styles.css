@@ -25,8 +25,11 @@ p {
 
 .navbar-brand{
     font-size: 2rem;
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: "DM Sans", sans-serif;
     padding-left:2%;
+    font-weight:600;
+    font-style: normal;
+    font-optical-sizing: auto;
 }
 .fw-bold {
     font-weight: 600 !important;
@@ -81,7 +84,7 @@ p {
 }
 
 .nav-link {
-    font-family: "IBM Plex Sans", sans-serif;
+    font-family: "DM Sans", sans-serif;
     font-weight: 400;
     color: #000 !important;
     font-size: 1.4rem;
@@ -483,12 +486,19 @@ p {
     position: relative;
 }
 
+#intro {
+        margin: 10% auto 10%;
+    }
+
+
 #myName {
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
     color: #000;
-    font-weight: 700;
-    font-size: 3vw;
+    font-weight: 200;
+    font-size: 2rem;
+    font-style: normal;
+    font-optical-sizing: auto;
 }
 
 #myName-container {
@@ -497,7 +507,12 @@ p {
 
 #myName-container p {
 font-size: 20px;
-font-family: "IBM Plex Sans", sans-serif;
+font-family: "DM Sans", sans-serif;
+font-weight:200;
+font-style: normal;
+width: 90%;
+margin:auto;
+
 }
 
 /* #myName>span {
@@ -922,20 +937,14 @@ margin: auto auto 5% auto;
     }
 }
 
-@media (max-width: 768px) {
-    #intro {
-        margin: 10% 0 10%;
-    }
-}
-
 @media (min-width: 768px) {
 
-    .pop-blue,
-    .pop,
-    .pop-green,
-    .pop-purple {
-        padding: 10px;
+    #myName {
+    font-size: 2.5rem;
     }
+    #myName-container p {
+        width: 45%;
+}
 }
 
 @media (min-width: 992px) {
@@ -1017,7 +1026,7 @@ margin: auto auto 5% auto;
     }
 
     #myName {
-        /* font-size: 145px; */
+        font-size: 3.125rem;
         padding-left: 12px;
     }
 }
@@ -1044,7 +1053,7 @@ margin: auto auto 5% auto;
         height: 100px;
     }
     #intro {
-        margin-top: 5%;
+        margin: 5% auto 0;
     }
 
 }
